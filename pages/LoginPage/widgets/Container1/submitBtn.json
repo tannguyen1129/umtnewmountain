@@ -24,7 +24,7 @@
   "mobileRightColumn": 48,
   "mobileTopRow": 70,
   "needsErrorInfo": false,
-  "onClick": "",
+  "onClick": "{{loginBtn.handleLogin();}}",
   "originalBottomRow": 36,
   "originalTopRow": 32,
   "parentColumnSpace": 8.9365234375,
