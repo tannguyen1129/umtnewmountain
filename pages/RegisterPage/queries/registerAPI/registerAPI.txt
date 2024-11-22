@@ -1,0 +1,9 @@
+{
+    "email": "{{emailInput.text}}",
+    "username": "{{usernameInput.text}}",
+    "full_name": "{{fullnameInput.text}}",
+    "gender": "{{genderChoice.selectedOptionValue}}",
+    "role": "{{roleChoice.selectedOptionValue}}",
+    "password": "{{passwordInput.text}}",
+    "password2": "{{passwordconfirmInput.text}}"
+}
