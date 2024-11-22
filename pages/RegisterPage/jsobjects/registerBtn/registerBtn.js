@@ -44,5 +44,10 @@ export default {
 			// Nếu lỗi, hiển thị thông báo lỗi
 			showAlert('Registration failed! Please try again.', 'error');
 		}
+	},
+
+	navigateToLogin() {
+		// Chuyển hướng đến RegisterPage
+		navigateTo('LoginPage', {}, 'SAME_WINDOW');
 	}
 };
