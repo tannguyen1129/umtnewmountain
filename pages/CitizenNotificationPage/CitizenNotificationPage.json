@@ -1,13 +1,12 @@
 {
-  "gitSyncId": "673eb342e443011fab9eaa76_95183ca6-0ebd-4402-9802-3e1489b62019",
+  "gitSyncId": "673eb342e443011fab9eaa76_44820038-f20a-44ba-b541-915888dcefb4",
   "unpublishedPage": {
-    "customSlug": "",
     "isHidden": false,
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 910,
+          "bottomRow": 430,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
@@ -27,7 +26,7 @@
         }
       }
     ],
-    "name": "RegisterPage",
-    "slug": "registerpage"
+    "name": "CitizenNotificationPage",
+    "slug": "citizennotificationpage"
   }
 }

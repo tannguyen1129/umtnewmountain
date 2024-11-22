@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "673eb342e443011fab9eaa76_fd804a7e-99fa-4db1-b308-f68a75ba6329",
+  "id": "CitizenPage_profileData",
+  "unpublishedCollection": {
+    "name": "profileData",
+    "pageId": "CitizenPage",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}
