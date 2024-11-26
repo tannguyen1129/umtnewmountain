@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 41,
+  "bottomRow": 74,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "canFreezeColumn": true,
   "childStylesheet": {
@@ -52,7 +52,12 @@
       "key": "boxShadow"
     }
   ],
-  "dynamicPropertyPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "tableData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
   "enableClientSideSearch": true,
   "flexVerticalAlignment": "start",
   "horizontalAlignment": "LEFT",
@@ -66,14 +71,14 @@
   "isVisibleSearch": true,
   "key": "cng53zcw1r",
   "label": "Data",
-  "leftColumn": 30,
+  "leftColumn": 28,
   "minWidth": 450,
   "mobileBottomRow": 41,
   "mobileLeftColumn": 30,
   "mobileRightColumn": 64,
   "mobileTopRow": 13,
   "needsErrorInfo": false,
-  "originalBottomRow": 41,
+  "originalBottomRow": 74,
   "originalTopRow": 13,
   "parentColumnSpace": 17.9375,
   "parentId": "0",
@@ -91,5 +96,5 @@
   "version": 2,
   "verticalAlignment": "CENTER",
   "widgetId": "gbp915xwad",
-  "widgetName": "Table1"
+  "widgetName": "TableNotification"
 }

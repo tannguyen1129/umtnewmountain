@@ -46,10 +46,6 @@
       "isDefault": false
     },
     {
-      "id": "CitizenNotificationPage",
-      "isDefault": false
-    },
-    {
       "id": "AuthorityNotificationPage",
       "isDefault": false
     }
