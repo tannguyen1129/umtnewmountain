@@ -23,11 +23,16 @@ export default {
 			storeValue('access_token', response.access); // Lưu access token
 			storeValue('refresh_token', response.refresh); // Lưu refresh token (nếu có)
 
-			// Hiển thị thông báo thành công
-			showAlert('Welcome Authority!', 'success');
-
-			// Chuyển hướng đến AuthorityPage
-			navigateTo('AuthorityPage', {}, 'SAME_WINDOW');
+			// Kiểm tra vai trò từ phản hồi và điều hướng
+			if (response.role === 'agency') {
+				showAlert('Welcome Agency!', 'success');
+				navigateTo('AgencyPage', {}, 'SAME_WINDOW'); // Điều hướng đến AgencyPage
+			} else if (response.role === 'authority') {
+				showAlert('Welcome Authority!', 'success');
+				navigateTo('AuthorityResourcePage', {}, 'SAME_WINDOW'); // Điều hướng đến AuthorityResourcePage
+			} else {
+				showAlert('Login successful, but role is unknown.', 'warning');
+			}
 		} catch (error) {
 			// Nếu lỗi, hiển thị thông báo lỗi
 			showAlert('Login failed! Please check your username and password.', 'error');

@@ -26,7 +26,7 @@
   "evaluationVersion": 2,
   "pages": [
     {
-      "id": "AuthorityPage",
+      "id": "AgencyPage",
       "isDefault": true
     },
     {
@@ -38,15 +38,15 @@
       "isDefault": false
     },
     {
-      "id": "AuthorityNotificationPage",
+      "id": "AgencyNotificationPage",
       "isDefault": false
     },
     {
-      "id": "ResourcePage",
+      "id": "AgencyResourcePage",
       "isDefault": false
     },
     {
-      "id": "ResourceManagementPage",
+      "id": "AuthorityResourcePage",
       "isDefault": false
     }
   ],
