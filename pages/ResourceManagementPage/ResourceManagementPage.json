@@ -1,24 +1,23 @@
 {
-  "gitSyncId": "673eb342e443011fab9eaa76_81f3bf43-a393-490e-9319-0afa2ac45915",
+  "gitSyncId": "673eb342e443011fab9eaa76_b7857425-a0ad-4d77-bca7-cc26380a4325",
   "unpublishedPage": {
-    "customSlug": "",
     "isHidden": false,
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 420,
+          "bottomRow": 380,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
           "dynamicBindingPathList": [],
           "leftColumn": 0,
-          "minHeight": 440,
+          "minHeight": 730,
           "parentColumnSpace": 1,
           "parentRowSpace": 1,
           "rightColumn": 1224,
           "snapColumns": 64,
-          "snapRows": 42,
+          "snapRows": 71,
           "topRow": 0,
           "type": "CANVAS_WIDGET",
           "version": 90,
@@ -27,7 +26,7 @@
         }
       }
     ],
-    "name": "LoginPage",
-    "slug": "loginpage"
+    "name": "ResourceManagementPage",
+    "slug": "resourcemanagementpage"
   }
 }

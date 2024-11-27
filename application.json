@@ -34,15 +34,19 @@
       "isDefault": false
     },
     {
-      "id": "VolunteerPage",
-      "isDefault": false
-    },
-    {
       "id": "CitizenPage",
       "isDefault": false
     },
     {
       "id": "AuthorityNotificationPage",
+      "isDefault": false
+    },
+    {
+      "id": "ResourcePage",
+      "isDefault": false
+    },
+    {
+      "id": "ResourceManagementPage",
       "isDefault": false
     }
   ],

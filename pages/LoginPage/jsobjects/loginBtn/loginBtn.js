@@ -19,8 +19,14 @@ export default {
 			// Log toàn bộ response để kiểm tra
 			console.log('Login response:', response);
 
-			// Chuyển hướng đến AuthorityPage nếu đăng nhập thành công
+			// Lưu JWT token vào Appsmith store
+			storeValue('access_token', response.access); // Lưu access token
+			storeValue('refresh_token', response.refresh); // Lưu refresh token (nếu có)
+
+			// Hiển thị thông báo thành công
 			showAlert('Welcome Authority!', 'success');
+
+			// Chuyển hướng đến AuthorityPage
 			navigateTo('AuthorityPage', {}, 'SAME_WINDOW');
 		} catch (error) {
 			// Nếu lỗi, hiển thị thông báo lỗi
@@ -29,8 +35,15 @@ export default {
 		}
 	},
 
-	navigateToRegister() {
-		// Chuyển hướng đến RegisterPage
-		navigateTo('RegisterPage', {}, 'SAME_WINDOW');
-	}
+	handleLogout() {
+		// Xóa token từ Appsmith store
+		removeValue('access_token');
+		removeValue('refresh_token');
+
+		// Hiển thị thông báo đăng xuất
+		showAlert('Logged out successfully!', 'success');
+
+		// Chuyển hướng về LoginPage
+		navigateTo('LoginPage', {}, 'SAME_WINDOW');
+	},
 };

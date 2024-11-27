@@ -1,24 +1,23 @@
 {
-  "gitSyncId": "673eb342e443011fab9eaa76_29940f05-a30a-43ca-b94b-b51b156ec39d",
+  "gitSyncId": "673eb342e443011fab9eaa76_40fd7e33-3ac7-42be-8ab0-71e02f870d88",
   "unpublishedPage": {
     "isHidden": false,
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 380,
+          "bottomRow": 980,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
           "dynamicBindingPathList": [],
-          "dynamicTriggerPathList": [],
           "leftColumn": 0,
-          "minHeight": 1292,
+          "minHeight": 440,
           "parentColumnSpace": 1,
           "parentRowSpace": 1,
-          "rightColumn": 4896,
+          "rightColumn": 1224,
           "snapColumns": 64,
-          "snapRows": 124,
+          "snapRows": 42,
           "topRow": 0,
           "type": "CANVAS_WIDGET",
           "version": 90,
@@ -27,7 +26,7 @@
         }
       }
     ],
-    "name": "VolunteerPage",
-    "slug": "volunteerpage"
+    "name": "ResourcePage",
+    "slug": "resourcepage"
   }
 }

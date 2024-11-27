@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "673eb342e443011fab9eaa76_e9d164e2-035b-467e-918a-85822b7891c0",
-  "id": "LoginPage_loginBtn.navigateToRegister",
+  "gitSyncId": "673eb342e443011fab9eaa76_a1903a20-8d7c-47cf-adb2-2c73f970e208",
+  "id": "LoginPage_loginBtn.handleLogout",
   "pluginId": "js-plugin",
   "pluginType": "JS",
   "unpublishedAction": {
@@ -23,8 +23,8 @@
       }
     ],
     "executeOnLoad": false,
-    "fullyQualifiedName": "loginBtn.navigateToRegister",
-    "name": "navigateToRegister",
+    "fullyQualifiedName": "loginBtn.handleLogout",
+    "name": "handleLogout",
     "pageId": "LoginPage",
     "userSetOnLoad": false
   }
