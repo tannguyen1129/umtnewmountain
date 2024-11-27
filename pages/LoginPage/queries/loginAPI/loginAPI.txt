@@ -1,4 +1,4 @@
 {
-    "email": "{{emailInput.text}}",
-    "password": "{{passwordInput.text}}",
+    "username": "{{usernameInput.text}}",
+    "password": "{{passwordInput.text}}"
 }

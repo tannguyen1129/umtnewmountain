@@ -1,9 +1,9 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 81,
+  "bottomRow": 6,
   "boxShadow": "none",
-  "buttonColor": "#ffffff",
+  "buttonColor": "#b91c1c",
   "buttonVariant": "PRIMARY",
   "disabledWhenInvalid": false,
   "dynamicBindingPathList": [
@@ -11,41 +11,34 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onClick"
-    }
-  ],
-  "iconAlign": "left",
-  "iconName": "add",
+  "dynamicTriggerPathList": [],
   "isDefaultClickDisabled": true,
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
   "key": "5h9winhf68",
-  "leftColumn": 2,
+  "leftColumn": 57,
   "minWidth": 120,
-  "mobileBottomRow": 31,
-  "mobileLeftColumn": 3,
-  "mobileRightColumn": 19,
-  "mobileTopRow": 27,
+  "mobileBottomRow": 21,
+  "mobileLeftColumn": 37,
+  "mobileRightColumn": 53,
+  "mobileTopRow": 17,
   "needsErrorInfo": false,
-  "onClick": "{{registerBtn.navigateToLogin();}}",
-  "originalBottomRow": 81,
-  "originalTopRow": 77,
-  "parentColumnSpace": 8.9365234375,
-  "parentId": "jxxoh5wy1t",
+  "originalBottomRow": 21,
+  "originalTopRow": 17,
+  "parentColumnSpace": 17.9375,
+  "parentId": "2kyuey8meu",
   "parentRowSpace": 10,
   "placement": "CENTER",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 36,
-  "text": "If you don't have an account, login here",
-  "topRow": 77,
+  "rightColumn": 63,
+  "text": "Logout",
+  "topRow": 2,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "9tt1jbgbfa",
-  "widgetName": "RegisterBtn"
+  "widgetId": "v06cu7mplf",
+  "widgetName": "Button1"
 }

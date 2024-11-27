@@ -11,7 +11,7 @@
           "value": "application/json"
         }
       ],
-      "body": "{\n    \"email\": \"{{emailInput.text}}\",\n    \"password\": \"{{passwordInput.text}}\",\n}",
+      "body": "{\n    \"username\": \"{{usernameInput.text}}\",\n    \"password\": \"{{passwordInput.text}}\"\n}",
       "bodyFormData": [],
       "encodeParamsToggle": true,
       "formData": {

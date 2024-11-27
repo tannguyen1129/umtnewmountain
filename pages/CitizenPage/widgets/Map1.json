@@ -2,7 +2,7 @@
   "allowZoom": true,
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 52,
+  "bottomRow": 62,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "defaultMarkers": [
     {
@@ -28,7 +28,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "sdvedmvvfx",
-  "leftColumn": 3,
+  "leftColumn": 0,
   "mapCenter": {
     "lat": 25.122,
     "long": 50.132
@@ -39,15 +39,15 @@
   "mobileRightColumn": 27,
   "mobileTopRow": 12,
   "needsErrorInfo": false,
-  "originalBottomRow": 52,
-  "originalTopRow": 12,
+  "originalBottomRow": 62,
+  "originalTopRow": 19,
   "parentColumnSpace": 17.9375,
   "parentId": "0",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 27,
-  "topRow": 12,
+  "rightColumn": 33,
+  "topRow": 19,
   "type": "MAP_WIDGET",
   "version": 1,
   "widgetId": "fu575c3y8f",
