@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "673eb342e443011fab9eaa76_300cd913-b0e0-4957-86fd-ef507d4748a1",
+  "id": "AuthorityResourcePage_approvalBtn",
+  "unpublishedCollection": {
+    "name": "approvalBtn",
+    "pageId": "AuthorityResourcePage",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}
