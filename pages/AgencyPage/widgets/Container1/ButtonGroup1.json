@@ -15,7 +15,11 @@
     }
   ],
   "dynamicPropertyPathList": [],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "groupButtons.groupButton6bsvrq7t55.onClick"
+    }
+  ],
   "groupButtons": {
     "groupButton1": {
       "buttonColor": "#ffffff",
@@ -83,6 +87,7 @@
       "itemType": "BUTTON",
       "label": "Resources",
       "menuItems": {},
+      "onClick": "{{navigateTo('AgencyResourcePage', {}, 'SAME_WINDOW');}}",
       "placement": "CENTER",
       "variant": "filled",
       "widgetId": "s9r0zp78tc"

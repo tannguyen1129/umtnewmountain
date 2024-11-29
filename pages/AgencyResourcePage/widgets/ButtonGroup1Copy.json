@@ -15,7 +15,17 @@
     }
   ],
   "dynamicPropertyPathList": [],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "groupButtons.groupButton1.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton3.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton1kty9k4m8h.onClick"
+    }
+  ],
   "groupButtons": {
     "groupButton1": {
       "buttonColor": "#b91c1c",
@@ -27,6 +37,7 @@
       "isVisible": true,
       "label": "Resources List",
       "menuItems": {},
+      "onClick": "{{showModal(ResourcesList.name);}}",
       "placement": "CENTER",
       "widgetId": ""
     },
@@ -41,6 +52,7 @@
       "itemType": "BUTTON",
       "label": "Dispatch List",
       "menuItems": {},
+      "onClick": "{{showModal(Dispath_list.name);}}",
       "placement": "CENTER",
       "variant": "filled",
       "widgetId": "8ger804og6"
@@ -69,6 +81,7 @@
           "widgetId": ""
         }
       },
+      "onClick": "{{showModal(PersonnelList.name);}}",
       "placement": "CENTER",
       "widgetId": ""
     },
