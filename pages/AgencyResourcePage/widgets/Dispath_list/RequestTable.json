@@ -38,13 +38,18 @@
     "unit",
     "status",
     "created_at",
-    "resource_type"
+    "resource_type",
+    "approval_status"
   ],
-  "columnUpdatedAt": 1732694484250,
+  "columnUpdatedAt": 1732865758505,
   "columnWidthMap": {
+    "created_at": 224,
+    "id": 60,
     "location": 325,
     "name": 260,
-    "requester_name": 219
+    "requester_name": 219,
+    "status": 112,
+    "unit": 95
   },
   "customIsLoading": false,
   "customIsLoadingValue": "",
@@ -90,6 +95,9 @@
     },
     {
       "key": "primaryColumns.resource_type.computedValue"
+    },
+    {
+      "key": "primaryColumns.approval_status.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -122,6 +130,40 @@
   "parentId": "uvip52netn",
   "parentRowSpace": 10,
   "primaryColumns": {
+    "approval_status": {
+      "alias": "approval_status",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{RequestTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"approval_status\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "approval_status",
+      "index": 7,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "approval_status",
+      "notation": "standard",
+      "originalId": "approval_status",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
     "created_at": {
       "alias": "created_at",
       "allowCellWrapping": false,
@@ -297,7 +339,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "resource_type",
       "notation": "standard",
       "originalId": "resource_type",

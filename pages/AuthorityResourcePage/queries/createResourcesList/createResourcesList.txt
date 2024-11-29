@@ -1,0 +1,7 @@
+{
+    "name": "{{resourcenameInput.text}}",
+    "quantity": "{{quantityInput.text}}",
+    "unit": "{{unitInput.text}}",
+    "province_or_city": "{{cityInput.text}}",
+    "location": "{{locationInput.text}}"
+}

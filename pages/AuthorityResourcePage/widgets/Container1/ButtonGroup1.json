@@ -18,7 +18,11 @@
     }
   ],
   "dynamicPropertyPathList": [],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "groupButtons.groupButtoncyy7x5tdr2.onClick"
+    }
+  ],
   "groupButtons": {
     "groupButton1": {
       "buttonColor": "#ffffff",
@@ -71,6 +75,7 @@
       "itemType": "BUTTON",
       "label": "Resoure List",
       "menuItems": {},
+      "onClick": "{{showModal(modalResourceList.name);}}",
       "placement": "CENTER",
       "variant": "filled",
       "widgetId": "96dkarwqes"
