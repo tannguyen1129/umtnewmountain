@@ -65,7 +65,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "syy23avzgr",
-  "leftColumn": 33,
+  "leftColumn": 32,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 10,
   "minWidth": 450,
@@ -87,5 +87,5 @@
   "topRow": 14,
   "type": "FORM_WIDGET",
   "widgetId": "qsqj1ar4zx",
-  "widgetName": "FormNotificationCopy"
+  "widgetName": "ApprovalStatus"
 }

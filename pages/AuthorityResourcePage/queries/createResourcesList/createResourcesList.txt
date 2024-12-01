@@ -1,7 +1,7 @@
 {
-    "name": "{{resourcenameInput.text}}",
-    "quantity": "{{quantityInput.text}}",
-    "unit": "{{unitInput.text}}",
-    "province_or_city": "{{cityInput.text}}",
-    "location": "{{locationInput.text}}"
+  "resources_name": "{{resourcenameInput.text}}",
+  "quantity": "{{quantityInput.text}}",
+  "Unit": "{{unitInput.text}}",
+  "city": "{{cityInput.text}}",
+  "location": "{{locationInput.text}}"
 }
