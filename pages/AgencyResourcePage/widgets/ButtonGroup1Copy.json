@@ -24,6 +24,9 @@
     },
     {
       "key": "groupButtons.groupButton1kty9k4m8h.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton6bsvrq7t55.onClick"
     }
   ],
   "groupButtons": {
@@ -96,6 +99,7 @@
       "itemType": "BUTTON",
       "label": "Assignments List",
       "menuItems": {},
+      "onClick": "{{showModal(Assignment_List.name);}}",
       "placement": "CENTER",
       "variant": "filled",
       "widgetId": "s9r0zp78tc"

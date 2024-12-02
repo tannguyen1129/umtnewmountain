@@ -27,11 +27,11 @@
   "pages": [
     {
       "id": "AgencyPage",
-      "isDefault": true
+      "isDefault": false
     },
     {
       "id": "CitizenPage",
-      "isDefault": false
+      "isDefault": true
     },
     {
       "id": "AgencyNotificationPage",
