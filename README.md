@@ -1,6 +1,6 @@
-# RESCURE SYSTEM - UMT.NEWMOUNTAIN [![Demo](https://olp.umtoj.edu.vn/app/rescue-app/citizenpage-673f7d3ae443011fab9eaaab?branch=main)
+# RESCURE SYSTEM - UMT.NEWMOUNTAIN
 
-
+https://olp.umtoj.edu.vn/app/rescue-app/citizenpage-673f7d3ae443011fab9eaaab?branch=main
 
 ## License
 
