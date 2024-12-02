@@ -11,9 +11,9 @@ Dự án được thực hiện nhằm mục đích tham gia bảng [Phần mề
 
 Phần mềm được đội ngũ tác giả của UMT.NewMountain open source theo giấy phép [The MIT License](https://opensource.org/license/mit)
 
-### [![Mục lục của tài liệu](https://www.google.com/url?sa=i&url=https%3A%2F%2Fclassic.vn%2Fdanh-muc-icon%2F&psig=AOvVaw1MOcnJbqaU3Pjo11E1Zars&ust=1733257792596000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMD6jNP2iYoDFQAAAAAdAAAAABAE)
+## Mục lục tài liệu
 
-## License
+### License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
