@@ -1,6 +1,7 @@
 # RESCURE SYSTEM - UMT.NEWMOUNTAIN
 
-[Báo cáo lỗi (Bug Report)🆘🆘][(https://github.com/<username>/<repository>/issues](https://github.com/tannguyen1129/umtnewmountain/issues/new?assignees=&labels=bug&projects=&template=bug_report.md&title=%5BBug%5D%3A+%3CM%C3%B4+t%E1%BA%A3+ng%E1%BA%AFn+g%E1%BB%8Dn+v%E1%BB%81+l%E1%BB%97i%3E))
+<a href="https://github.com/tannguyen1129/umtnewmountain/issues/new?assignees=&labels=bug&projects=&template=bug_report.md&title=%5BBug%5D%3A+%3CM%C3%B4+t%E1%BA%A3+ng%E1%BA%AFn+g%E1%BB%8Dn+v%E1%BB%81+l%E1%BB%97i%3">Báo cáo lỗi (Bug Report)🆘🆘
+</a>
 
 ## License
 
