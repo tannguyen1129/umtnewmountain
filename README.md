@@ -18,8 +18,8 @@ Phần mềm được đội ngũ tác giả của UMT.NewMountain open source t
 3. [Chức năng](#3-Chức-năng)
 4. [Cấu trúc thư mục dự án](#4-Cấu-trúc-thư-mục-dự-án)
 5. [Hướng dẫn cài đặt](#5-Hướng-dẫn-cài-đặt)
-    - 
-    - 
+       - [📋 Yêu Cầu - Prerequisites](#yêu-cầu-📋)
+       - [🔨 Cài Đặt](#🔨-cài-đặt)
 6. [Đóng góp](#6-Đóng-góp)
 7. [License (Giấy phép)](#7-License-(-Giấy-phép-))
 
