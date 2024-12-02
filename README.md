@@ -14,15 +14,14 @@ Phần mềm được đội ngũ tác giả của UMT.NewMountain open source t
 ## Mục lục tài liệu
 
 1. [Giới Thiệu](#1-Giới-thiệu)
-2. [Chức Năng](#chức-năng-chính)
-3. [Tổng Quan Hệ Thống](#👩‍💻-tổng-quan-hệ-thống)
-4. [Cấu Trúc Thư Mục](#cấu-trúc-thư-mục)
-5. [Hướng Dẫn Cài Đặt](#hướng-dẫn-cài-đặt)
-    - [📋 Yêu Cầu - Prerequisites](#yêu-cầu-📋)
-    - [🔨 Cài Đặt](#🔨-cài-đặt)
-6. [CI/CD](#ci/cd)
-7. [🙌 Đóng Góp](#🙌-đóng-góp-cho-dự-án)
-8. [📝 License](#📝-license)
+2. [Tổng quan hệ thống](#2-Tổng-quan-hệ-thống)
+3. [Chức năng](#3-Chức-năng)
+4. [Cấu trúc thư mục dự án](#4-Cấu-trúc-thư-mục-dự-án)
+5. [Hướng dẫn cài đặt](#5-Hướng-dẫn-cài-đặt)
+    - 
+    - 
+6. [Đóng góp](#6-Đóng-góp)
+7. [License (Giấy phép)](#7-License-(-Giấy-phép-))
 
 ### 1. Giới thiệu
 
