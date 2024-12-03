@@ -1,7 +1,0 @@
-{
-  "requester_name": "{{RequesterInput.text}}",
-  "description": "{{DescriptionInput.text}}",
-  "resource_type": "{{resoureceType.selectedOptionValue}}",
-  "quantity_needed": "{{Quantity_neededInput.text}}",
-  "unit": "{{unitInput.text}}"
-}

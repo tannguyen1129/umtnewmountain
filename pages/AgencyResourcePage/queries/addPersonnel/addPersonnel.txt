@@ -1,7 +1,0 @@
-{
-  "name": "{{NamePersonnel.text}}",
-  "role": "{{rolemissionInput.text}}",
-  "quantity": "{{quantityInput.text}}",
-  "location": "{{locationInput.text}}",
-  "contact": "{{contactInput.text}}"
-}
