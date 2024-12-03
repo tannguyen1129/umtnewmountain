@@ -18,8 +18,8 @@ Phần mềm được đội ngũ tác giả của UMT.NewMountain open source t
 3. [Chức năng](#3-Chức-năng)
 4. [Cấu trúc thư mục dự án](#4-Cấu-trúc-thư-mục-dự-án)
 5. [Hướng dẫn cài đặt](#hướng-dẫn-cài-đặt)
-    - [📋 Yêu Cầu - Prerequisites](#yêu-cầu-📋)
-    - [🔨 Cài Đặt](#🔨-cài-đặt)
+    - [5.1.📋 Yêu cầu - Prerequisites](#yêu-cầu-📋)
+    - [5.2.🔨 Cài đặt](#🔨-cài-đặt)
 6. [Đóng góp](#6-Đóng-góp)
 7. [License (Giấy phép)](#7-License-(-Giấy-phép-))
 
@@ -33,12 +33,17 @@ Phần mềm được đội ngũ tác giả của UMT.NewMountain open source t
 
 ### 5. Hướng dẫn cài đặt
 
+#### 5.1. Yêu cầu
+
+a. Nếu bạn sử dụng [Appsmith](https://www.appsmith.com/) để clone dự án thì chỉ cần đăng nhập vào website
+
+b. Nếu bạn muốn tự host trên máy chủ thì thực hiện như sau:
+
 ### 6. Đóng góp
 
 ### 7. License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 
 # umtnewmountain![](https://raw.githubusercontent.com/appsmithorg/appsmith/release/static/appsmith_logo_primary.png)
 
