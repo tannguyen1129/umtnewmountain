@@ -38,10 +38,11 @@
     "unit",
     "status",
     "created_at",
-    "resource_type",
-    "approval_status"
+    "approval_status",
+    "resource_type_details",
+    "resource_type"
   ],
-  "columnUpdatedAt": 1732865758505,
+  "columnUpdatedAt": 1733218516788,
   "columnWidthMap": {
     "created_at": 224,
     "id": 60,
@@ -98,6 +99,9 @@
     },
     {
       "key": "primaryColumns.approval_status.computedValue"
+    },
+    {
+      "key": "primaryColumns.resource_type_details.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -344,6 +348,40 @@
       "notation": "standard",
       "originalId": "resource_type",
       "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "resource_type_details": {
+      "alias": "resource_type_details",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{RequestTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"resource_type_details\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "resource_type_details",
+      "index": 4,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": false,
+      "label": "resource_type_details",
+      "notation": "standard",
+      "originalId": "resource_type_details",
+      "sticky": "",
+      "textColor": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},

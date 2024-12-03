@@ -37,9 +37,10 @@
     "assigned_resources",
     "assigned_personnel",
     "status",
-    "created_at"
+    "created_at",
+    "customColumn1"
   ],
-  "columnUpdatedAt": 1733075597682,
+  "columnUpdatedAt": 1733219218399,
   "columnWidthMap": {
     "assigned_personnel": 263,
     "assigned_resources": 197,
@@ -88,10 +89,27 @@
     },
     {
       "key": "primaryColumns.created_at.computedValue"
+    },
+    {
+      "key": "primaryColumns.customColumn1.boxShadow"
+    },
+    {
+      "key": "primaryColumns.customColumn1.borderRadius"
+    },
+    {
+      "key": "primaryColumns.customColumn1.buttonColor"
     }
   ],
-  "dynamicPropertyPathList": [],
-  "dynamicTriggerPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "primaryColumns.customColumn1.onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "primaryColumns.customColumn1.onClick"
+    }
+  ],
   "enableClientSideSearch": true,
   "flexVerticalAlignment": "start",
   "horizontalAlignment": "LEFT",
@@ -122,7 +140,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( currentRow.assigned_personnel.map(personnel => personnel.personnel_details.name).join(\", \")))}}",
+      "computedValue": "{{AssignmentTable.processedTableData.map((currentRow, currentIndex) => ( currentRow.assigned_personnel.map(personnel => personnel.personnel_details.name).join(\", \")))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -156,7 +174,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( currentRow.assigned_resources.map(resource => resource.resource_details.name).join(\", \")))}}",
+      "computedValue": "{{AssignmentTable.processedTableData.map((currentRow, currentIndex) => ( currentRow.assigned_resources.map(resource => resource.resource_details.name).join(\", \")))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -190,7 +208,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"created_at\"]))}}",
+      "computedValue": "{{AssignmentTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"created_at\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -218,13 +236,52 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
+    "customColumn1": {
+      "alias": "Update Status",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "borderRadius": "{{AssignmentTable.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
+      "boxShadow": "{{AssignmentTable.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
+      "buttonColor": "{{AssignmentTable.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
+      "buttonLabel": "Update",
+      "buttonStyle": "rgb(3, 179, 101)",
+      "columnType": "button",
+      "computedValue": "",
+      "currencyCode": "USD",
+      "customAlias": "",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "customColumn1",
+      "index": 7,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": true,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Update Status",
+      "labelColor": "#FFFFFF",
+      "notation": "standard",
+      "onClick": "{{updateStatusAssignment.run(() => {\n  showAlert(\"Cập nhật trạng thái thành công!\", \"success\"); // Thông báo thành công\n  assignmentListAPI.run(); // Tải lại bảng dữ liệu\n}, (error) => {\n  showAlert(\"Cập nhật trạng thái thất bại: \" + error.message, \"error\"); // Thông báo lỗi\n});\n}}",
+      "originalId": "customColumn1",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
     "id": {
       "alias": "id",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "number",
-      "computedValue": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id\"]))}}",
+      "computedValue": "{{AssignmentTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -258,7 +315,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( currentRow.request_details.requester_name))}}",
+      "computedValue": "{{AssignmentTable.processedTableData.map((currentRow, currentIndex) => ( currentRow.request_details.requester_name))}}",
       "currencyCode": "USD",
       "customAlias": "",
       "decimals": 0,
@@ -293,7 +350,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"request_details\"]))}}",
+      "computedValue": "{{AssignmentTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"request_details\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -327,7 +384,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"status\"]))}}",
+      "computedValue": "{{AssignmentTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"status\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -344,7 +401,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "status",
+      "label": "Status",
       "notation": "standard",
       "originalId": "status",
       "sticky": "",
@@ -368,5 +425,5 @@
   "version": 2,
   "verticalAlignment": "CENTER",
   "widgetId": "9ax8le2cpu",
-  "widgetName": "Table3"
+  "widgetName": "AssignmentTable"
 }

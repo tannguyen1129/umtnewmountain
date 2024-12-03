@@ -2,6 +2,7 @@
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 6,
+  "disableLink": "{{}}",
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -14,6 +15,11 @@
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "disableLink"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
   "fontSize": "1.25rem",
@@ -40,7 +46,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 18,
   "shouldTruncate": false,
-  "text": "Authority Notification",
+  "text": "Agency Notification",
   "textAlign": "LEFT",
   "textColor": "#b91c1c",
   "topRow": 2,

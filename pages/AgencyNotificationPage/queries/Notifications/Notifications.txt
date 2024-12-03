@@ -1,0 +1,4 @@
+{
+  "title": "{{TitileInput.text}}",
+  "content": "{{MessageInput.text}}",
+}

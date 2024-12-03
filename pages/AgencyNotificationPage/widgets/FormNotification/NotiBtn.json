@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 60,
+  "bottomRow": 51,
   "boxShadow": "none",
   "buttonColor": "#1e3a8a",
   "buttonVariant": "PRIMARY",
@@ -11,19 +11,29 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "isDefaultClickDisabled": true,
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
   "key": "6xdvzhaexh",
-  "leftColumn": 46,
+  "leftColumn": 47,
   "minWidth": 120,
   "mobileBottomRow": 37,
   "mobileLeftColumn": 46,
   "mobileRightColumn": 62,
   "mobileTopRow": 33,
   "needsErrorInfo": false,
+  "onClick": "{{// onClick của nút NotiBtn\nNotifications.run(() => {\n  showAlert(\"Notification created successfully!\", \"success\"); // Hiển thị thông báo thành công\n  NotificationListAPI.run(); // Cập nhật bảng dữ liệu\n}, (error) => {\n  showAlert(\"Failed to create notification: \" + error.message, \"error\"); // Hiển thị thông báo lỗi\n});\n\n}}",
   "originalBottomRow": 60,
   "originalTopRow": 56,
   "parentId": "w4k05i0d0p",
@@ -32,11 +42,11 @@
   "renderMode": "CANVAS",
   "resetFormOnClick": true,
   "responsiveBehavior": "hug",
-  "rightColumn": 62,
+  "rightColumn": 63,
   "text": "Submit",
-  "topRow": 56,
+  "topRow": 47,
   "type": "BUTTON_WIDGET",
   "version": 1,
   "widgetId": "suiv7lhmt4",
-  "widgetName": "Button2"
+  "widgetName": "NotiBtn"
 }

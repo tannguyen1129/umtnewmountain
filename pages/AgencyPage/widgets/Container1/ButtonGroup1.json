@@ -18,6 +18,9 @@
   "dynamicTriggerPathList": [
     {
       "key": "groupButtons.groupButton6bsvrq7t55.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonh2d3yd3t90.onClick"
     }
   ],
   "groupButtons": {
@@ -103,6 +106,7 @@
       "itemType": "BUTTON",
       "label": "Notification",
       "menuItems": {},
+      "onClick": "{{navigateTo('AgencyNotificationPage', {}, 'SAME_WINDOW');}}",
       "placement": "CENTER",
       "variant": "filled",
       "widgetId": "dwe57gchy4"
