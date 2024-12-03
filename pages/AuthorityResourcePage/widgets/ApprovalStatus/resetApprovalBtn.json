@@ -1,0 +1,44 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 66,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "SECONDARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "6xdvzhaexh",
+  "leftColumn": 26,
+  "minWidth": 120,
+  "mobileBottomRow": 37,
+  "mobileLeftColumn": 30,
+  "mobileRightColumn": 46,
+  "mobileTopRow": 33,
+  "needsErrorInfo": false,
+  "originalBottomRow": 82,
+  "originalTopRow": 78,
+  "parentId": "w8wlxyaj7x",
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": true,
+  "responsiveBehavior": "hug",
+  "rightColumn": 42,
+  "text": "Reset",
+  "topRow": 62,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "gqcvgj3om2",
+  "widgetName": "resetApprovalBtn"
+}

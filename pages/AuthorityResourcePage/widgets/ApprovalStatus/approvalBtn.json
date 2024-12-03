@@ -1,0 +1,52 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 66,
+  "boxShadow": "none",
+  "buttonColor": "#1e3a8a",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": true,
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "6xdvzhaexh",
+  "leftColumn": 45,
+  "minWidth": 120,
+  "mobileBottomRow": 37,
+  "mobileLeftColumn": 46,
+  "mobileRightColumn": 62,
+  "mobileTopRow": 33,
+  "needsErrorInfo": false,
+  "onClick": "{{updateApprovalStatus.run(() => {\n\tfetchDispatchRequests.run(() => {\n\t\tshowAlert(\"Request approved successfully!\", \"success\");\n\t});\n}, () => {\n\tshowAlert(\"Failed to update status. Please try again.\", \"error\");\n});}}",
+  "originalBottomRow": 82,
+  "originalTopRow": 78,
+  "parentId": "w8wlxyaj7x",
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": true,
+  "responsiveBehavior": "hug",
+  "rightColumn": 62,
+  "text": "Approval Request",
+  "topRow": 62,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "rehi4zcy6a",
+  "widgetName": "approvalBtn"
+}

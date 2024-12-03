@@ -1,0 +1,33 @@
+{
+  "gitSyncId": "673eb342e443011fab9eaa76_4e49d0aa-5d75-4946-8050-8a0d921ead66",
+  "unpublishedPage": {
+    "customSlug": "",
+    "isHidden": false,
+    "layouts": [
+      {
+        "dsl": {
+          "backgroundColor": "none",
+          "bottomRow": 420,
+          "canExtend": true,
+          "containerStyle": "none",
+          "detachFromLayout": true,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "minHeight": 440,
+          "parentColumnSpace": 1,
+          "parentRowSpace": 1,
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "snapRows": 42,
+          "topRow": 0,
+          "type": "CANVAS_WIDGET",
+          "version": 90,
+          "widgetId": "0",
+          "widgetName": "MainContainer"
+        }
+      }
+    ],
+    "name": "LoginPage",
+    "slug": "loginpage"
+  }
+}

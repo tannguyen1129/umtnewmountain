@@ -1,0 +1,4 @@
+{
+    "id": {{RequesterDropdown.selectedOptionValue}}, 
+     "approval_status": {{ApprovalSelect.selectedOptionValue}}
+}
