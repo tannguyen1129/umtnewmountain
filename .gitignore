@@ -1,0 +1,6 @@
+# Bỏ qua thư mục .github
+.github/
+
+# Bỏ qua README và LICENSE
+README.md
+LICENSE
