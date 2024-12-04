@@ -15,7 +15,11 @@
     }
   ],
   "dynamicPropertyPathList": [],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "groupButtons.groupButtonh2d3yd3t90.onClick"
+    }
+  ],
   "groupButtons": {
     "groupButton1": {
       "buttonColor": "#ffffff",
@@ -25,7 +29,7 @@
       "index": 0,
       "isDisabled": false,
       "isVisible": true,
-      "label": "Home",
+      "label": "Trang chủ",
       "menuItems": {},
       "placement": "CENTER",
       "widgetId": ""
@@ -39,7 +43,7 @@
       "isSeparator": false,
       "isVisible": true,
       "itemType": "BUTTON",
-      "label": "Help Requests",
+      "label": "Yêu cầu hỗ trợ",
       "menuItems": {},
       "placement": "CENTER",
       "variant": "filled",
@@ -52,7 +56,7 @@
       "index": 1,
       "isDisabled": false,
       "isVisible": true,
-      "label": "Interactive Map",
+      "label": "Bản đồ cảnh báo",
       "menuItems": {
         "menuItem3": {
           "backgroundColor": "#DD4B34",
@@ -81,8 +85,9 @@
       "isSeparator": false,
       "isVisible": true,
       "itemType": "BUTTON",
-      "label": "Notification",
+      "label": "Thông báo",
       "menuItems": {},
+      "onClick": "{{navigateTo('CitizenNotification', {}, 'SAME_WINDOW');}}",
       "placement": "CENTER",
       "variant": "filled",
       "widgetId": "dwe57gchy4"
@@ -92,7 +97,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "hyy3mkgipc",
-  "leftColumn": 21,
+  "leftColumn": 22,
   "minWidth": 450,
   "mobileBottomRow": 10,
   "mobileLeftColumn": 10,
@@ -107,7 +112,7 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 54,
+  "rightColumn": 55,
   "topRow": 2,
   "type": "BUTTON_GROUP_WIDGET",
   "version": 1,

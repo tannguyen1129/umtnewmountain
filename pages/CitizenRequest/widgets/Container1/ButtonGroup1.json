@@ -17,10 +17,7 @@
   "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
-      "key": "groupButtons.groupButton6bsvrq7t55.onClick"
-    },
-    {
-      "key": "groupButtons.groupButtonh2d3yd3t90.onClick"
+      "key": "groupButtons.groupButton1.onClick"
     }
   ],
   "groupButtons": {
@@ -34,6 +31,7 @@
       "isVisible": true,
       "label": "Trang chủ",
       "menuItems": {},
+      "onClick": "{{navigateTo('CitizenPage', {}, 'SAME_WINDOW');}}",
       "placement": "CENTER",
       "widgetId": ""
     },
@@ -79,34 +77,17 @@
       "placement": "CENTER",
       "widgetId": ""
     },
-    "groupButton6bsvrq7t55": {
-      "buttonColor": "#ffffff",
-      "buttonType": "SIMPLE",
-      "id": "groupButton6bsvrq7t55",
-      "index": 3,
-      "isDisabled": false,
-      "isSeparator": false,
-      "isVisible": true,
-      "itemType": "BUTTON",
-      "label": "Tài nguyên",
-      "menuItems": {},
-      "onClick": "{{navigateTo('AgencyResourcePage', {}, 'SAME_WINDOW');}}",
-      "placement": "CENTER",
-      "variant": "filled",
-      "widgetId": "s9r0zp78tc"
-    },
     "groupButtonh2d3yd3t90": {
       "buttonColor": "#ffffff",
       "buttonType": "SIMPLE",
       "id": "groupButtonh2d3yd3t90",
-      "index": 4,
+      "index": 3,
       "isDisabled": false,
       "isSeparator": false,
       "isVisible": true,
       "itemType": "BUTTON",
       "label": "Thông báo",
       "menuItems": {},
-      "onClick": "{{navigateTo('AgencyNotificationPage', {}, 'SAME_WINDOW');}}",
       "placement": "CENTER",
       "variant": "filled",
       "widgetId": "dwe57gchy4"
@@ -127,14 +108,14 @@
   "originalBottomRow": 27,
   "originalTopRow": 23,
   "parentColumnSpace": 17.625,
-  "parentId": "2kyuey8meu",
+  "parentId": "px5ebvtyxe",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 54,
+  "rightColumn": 55,
   "topRow": 2,
   "type": "BUTTON_GROUP_WIDGET",
   "version": 1,
-  "widgetId": "70ag50bcwj",
+  "widgetId": "nrsi0jsp55",
   "widgetName": "ButtonGroup1"
 }

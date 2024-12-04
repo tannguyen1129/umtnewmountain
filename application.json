@@ -52,6 +52,10 @@
     {
       "id": "CitizenNotification",
       "isDefault": false
+    },
+    {
+      "id": "CitizenRequest",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

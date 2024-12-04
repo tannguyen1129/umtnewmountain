@@ -23,7 +23,7 @@
   "isRequired": false,
   "isVisible": true,
   "key": "rn127sofs8",
-  "label": "Resource name",
+  "label": "Tên tài nguyên",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "BOLD",
