@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 5,
+  "bottomRow": 75,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -16,12 +16,12 @@
   "dynamicHeight": "AUTO_HEIGHT",
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-  "fontSize": "1.25rem",
+  "fontSize": "0.875rem",
   "fontStyle": "BOLD",
   "isLoading": false,
   "isVisible": true,
   "key": "ktng59r74f",
-  "leftColumn": 1,
+  "leftColumn": 2,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -30,21 +30,21 @@
   "mobileRightColumn": 25.5,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "originalBottomRow": 7,
-  "originalTopRow": 1,
+  "originalBottomRow": 75,
+  "originalTopRow": 71,
   "overflow": "NONE",
   "parentId": "xp17aqiy6i",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 31,
+  "rightColumn": 32,
   "shouldTruncate": false,
-  "text": "Gửi yêu cầu cứu hộ/cứu trợ đến cơ quan chức năng",
+  "text": "*Sau 15 phút, chuyên viên hỗ trợ sẽ liên hệ",
   "textAlign": "LEFT",
   "textColor": "#1e3a8a",
-  "topRow": 1,
+  "topRow": 71,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "y4vewoe851",
-  "widgetName": "Text3"
+  "widgetId": "ckxxeby41j",
+  "widgetName": "Text3Copy"
 }

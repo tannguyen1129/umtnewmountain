@@ -103,21 +103,6 @@
       "placement": "CENTER",
       "variant": "filled",
       "widgetId": "s9r0zp78tc"
-    },
-    "groupButtonh2d3yd3t90": {
-      "buttonColor": "#b91c1c",
-      "buttonType": "MENU",
-      "id": "groupButtonh2d3yd3t90",
-      "index": 4,
-      "isDisabled": false,
-      "isSeparator": false,
-      "isVisible": true,
-      "itemType": "BUTTON",
-      "label": "Status request",
-      "menuItems": {},
-      "placement": "CENTER",
-      "variant": "filled",
-      "widgetId": "dwe57gchy4"
     }
   },
   "isCanvas": false,

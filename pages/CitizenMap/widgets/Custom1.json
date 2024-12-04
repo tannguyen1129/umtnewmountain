@@ -1,0 +1,66 @@
+{
+  "backgroundColor": "#FFFFFF",
+  "borderColor": "#E0DEDE",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "1",
+  "bottomRow": 86,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "defaultModel": "{\n  \"tips\": [\n    \"Pass data to this widget in the default model field\",\n    \"Access data in the javascript file using the appsmith.model variable\",\n    \"Create events in the widget and trigger them in the javascript file using appsmith.triggerEvent('eventName')\",\n    \"Access data in CSS as var(--appsmith-model-{property-name})\"\n  ]\n}",
+  "dynamicBindingPathList": [
+    {
+      "key": "theme"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [
+    {
+      "key": "onResetClick"
+    }
+  ],
+  "events": [
+    "onResetClick"
+  ],
+  "isCanvas": false,
+  "isLoading": false,
+  "isSearchWildcard": true,
+  "isVisible": true,
+  "key": "7ieq78cj8a",
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 44,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 23,
+  "mobileTopRow": 14,
+  "needsErrorInfo": false,
+  "onResetClick": "{{showAlert('Successfully reset!!', '');}}",
+  "originalBottomRow": 86,
+  "originalTopRow": 13,
+  "parentColumnSpace": 19.8125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 64,
+  "srcDoc": {
+    "css": "",
+    "html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>Disaster Zone Map</title>\n  <!-- Leaflet CSS -->\n  <link rel=\"stylesheet\" href=\"https://unpkg.com/leaflet@1.9.4/dist/leaflet.css\" />\n  <!-- Custom Styles -->\n  <style>\n    #map {\n      height: 600px;\n      width: 100%;\n      margin-top: 20px;\n    }\n    body {\n      font-family: Arial, sans-serif;\n      padding: 20px;\n    }\n    .search-bar {\n      margin-bottom: 10px;\n      display: flex;\n      gap: 10px;\n    }\n    .search-bar input {\n      padding: 8px;\n      width: 250px;\n    }\n    .search-bar button {\n      padding: 8px 16px;\n      cursor: pointer;\n    }\n  </style>\n</head>\n<body>\n  <h1>Disaster Zone Map</h1>\n  <p>Search and view disaster zones on the map.</p>\n\n  <!-- Search Bar -->\n  <div class=\"search-bar\">\n    <input type=\"text\" id=\"searchInput\" placeholder=\"Enter disaster zone name\" />\n    <button id=\"searchButton\">Search</button>\n  </div>\n\n  <!-- Map Container -->\n  <div id=\"map\"></div>\n\n  <!-- Leaflet JS -->\n  <script src=\"https://unpkg.com/leaflet@1.9.4/dist/leaflet.js\"></script>\n  <!-- Fetch Data and Render Map -->\n  <script>\n    const map = L.map('map').setView([10.762622, 106.660172], 13);\n\n    // Add Tile Layer (OpenStreetMap)\n    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {\n      maxZoom: 19,\n      attribution: '© OpenStreetMap contributors'\n    }).addTo(map);\n\n    // Fetch Data from API\n    function loadDisasterZones(searchQuery = '') {\n      const url = `https://api.umtoj.edu.vn/api/disaster-zones/?search=${searchQuery}`;\n      fetch(url)\n        .then(response => response.json())\n        .then(data => {\n          // Clear existing layers\n          map.eachLayer((layer) => {\n            if (layer instanceof L.Circle || layer instanceof L.Marker) {\n              map.removeLayer(layer);\n            }\n          });\n\n          // Add disaster zones to map\n          if (data.length === 0) {\n            alert('No disaster zones found!');\n            return;\n          }\n\n          data.forEach(zone => {\n            const circle = L.circle([zone.latitude, zone.longitude], {\n              color: 'red',\n              fillColor: '#f03',\n              fillOpacity: 0.5,\n              radius: zone.radius\n            }).addTo(map);\n\n            circle.bindPopup(`<strong>${zone.name}</strong><br>${zone.description}`);\n          });\n\n          // Zoom to first result\n          const firstZone = data[0];\n          map.setView([firstZone.latitude, firstZone.longitude], 15);\n        })\n        .catch(error => {\n          console.error('Error fetching data:', error);\n        });\n    }\n\n    // Load all zones initially\n    loadDisasterZones();\n\n    // Add search functionality\n    const searchButton = document.getElementById('searchButton');\n    const searchInput = document.getElementById('searchInput');\n    searchButton.addEventListener('click', () => {\n      const searchQuery = searchInput.value;\n      loadDisasterZones(searchQuery);\n    });\n  </script>\n</body>\n</html>\n",
+    "js": ""
+  },
+  "theme": "{{appsmith.theme}}",
+  "topRow": 13,
+  "type": "CUSTOM_WIDGET",
+  "uncompiledSrcDoc": {
+    "css": "",
+    "html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>Disaster Zone Map</title>\n  <!-- Leaflet CSS -->\n  <link rel=\"stylesheet\" href=\"https://unpkg.com/leaflet@1.9.4/dist/leaflet.css\" />\n  <!-- Custom Styles -->\n  <style>\n    #map {\n      height: 600px;\n      width: 100%;\n      margin-top: 20px;\n    }\n    body {\n      font-family: Arial, sans-serif;\n      padding: 20px;\n    }\n    .search-bar {\n      margin-bottom: 10px;\n      display: flex;\n      gap: 10px;\n    }\n    .search-bar input {\n      padding: 8px;\n      width: 250px;\n    }\n    .search-bar button {\n      padding: 8px 16px;\n      cursor: pointer;\n    }\n  </style>\n</head>\n<body>\n  <h1>Disaster Zone Map</h1>\n  <p>Search and view disaster zones on the map.</p>\n\n  <!-- Search Bar -->\n  <div class=\"search-bar\">\n    <input type=\"text\" id=\"searchInput\" placeholder=\"Enter disaster zone name\" />\n    <button id=\"searchButton\">Search</button>\n  </div>\n\n  <!-- Map Container -->\n  <div id=\"map\"></div>\n\n  <!-- Leaflet JS -->\n  <script src=\"https://unpkg.com/leaflet@1.9.4/dist/leaflet.js\"></script>\n  <!-- Fetch Data and Render Map -->\n  <script>\n    const map = L.map('map').setView([10.762622, 106.660172], 13);\n\n    // Add Tile Layer (OpenStreetMap)\n    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {\n      maxZoom: 19,\n      attribution: '© OpenStreetMap contributors'\n    }).addTo(map);\n\n    // Fetch Data from API\n    function loadDisasterZones(searchQuery = '') {\n      const url = `https://api.umtoj.edu.vn/api/disaster-zones/?search=${searchQuery}`;\n      fetch(url)\n        .then(response => response.json())\n        .then(data => {\n          // Clear existing layers\n          map.eachLayer((layer) => {\n            if (layer instanceof L.Circle || layer instanceof L.Marker) {\n              map.removeLayer(layer);\n            }\n          });\n\n          // Add disaster zones to map\n          if (data.length === 0) {\n            alert('No disaster zones found!');\n            return;\n          }\n\n          data.forEach(zone => {\n            const circle = L.circle([zone.latitude, zone.longitude], {\n              color: 'red',\n              fillColor: '#f03',\n              fillOpacity: 0.5,\n              radius: zone.radius\n            }).addTo(map);\n\n            circle.bindPopup(`<strong>${zone.name}</strong><br>${zone.description}`);\n          });\n\n          // Zoom to first result\n          const firstZone = data[0];\n          map.setView([firstZone.latitude, firstZone.longitude], 15);\n        })\n        .catch(error => {\n          console.error('Error fetching data:', error);\n        });\n    }\n\n    // Load all zones initially\n    loadDisasterZones();\n\n    // Add search functionality\n    const searchButton = document.getElementById('searchButton');\n    const searchInput = document.getElementById('searchInput');\n    searchButton.addEventListener('click', () => {\n      const searchQuery = searchInput.value;\n      loadDisasterZones(searchQuery);\n    });\n  </script>\n</body>\n</html>\n",
+    "js": ""
+  },
+  "version": 1,
+  "widgetId": "kx10x339bh",
+  "widgetName": "Custom1"
+}

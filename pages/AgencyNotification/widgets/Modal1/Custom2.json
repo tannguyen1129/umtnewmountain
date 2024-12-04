@@ -1,0 +1,64 @@
+{
+  "backgroundColor": "#FFFFFF",
+  "borderColor": "#E0DEDE",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "1",
+  "bottomRow": 75,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "defaultModel": "{\n  \"tips\": [\n    \"Pass data to this widget in the default model field\",\n    \"Access data in the javascript file using the appsmith.model variable\",\n    \"Create events in the widget and trigger them in the javascript file using appsmith.triggerEvent('eventName')\",\n    \"Access data in CSS as var(--appsmith-model-{property-name})\"\n  ]\n}",
+  "dynamicBindingPathList": [
+    {
+      "key": "theme"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [
+    {
+      "key": "onResetClick"
+    }
+  ],
+  "events": [
+    "onResetClick"
+  ],
+  "isCanvas": false,
+  "isLoading": false,
+  "isSearchWildcard": true,
+  "isVisible": true,
+  "key": "7ieq78cj8a",
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 36,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 24,
+  "mobileTopRow": 6,
+  "needsErrorInfo": false,
+  "onResetClick": "{{showAlert('Successfully reset!!', '');}}",
+  "parentColumnSpace": 18.8125,
+  "parentId": "25qdkcfrs7",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 62,
+  "srcDoc": {
+    "css": ".app {\n  width: calc(1px * var(--appsmith-ui-width));\n  justify-content: center;\n  border-radius: 0px;\n  border: none;\n}\n.app .tip-container {\n  margin-bottom: 20px;\n}\n.app .tip-container h2 {\n  margin-bottom: 20px;\n  font-size: 16px;\n  font-weight: 700;\n}\n.app .tip-container .tip-header {\n  display: flex;\n  justify-content: space-between;\n  align-items: baseline;\n}\n.app .tip-container .tip-header div {\n  color: #999;\n}\n.app .button-container {\n  text-align: right;\n}\n.app .button-container button {\n  margin: 0 10px;\n  border-radius: var(--appsmith-theme-borderRadius) !important;\n}\n.app .button-container button.primary {\n  background: var(--appsmith-theme-primaryColor) !important;\n}\n.app .button-container button.reset:not([disabled]) {\n  color: var(--appsmith-theme-primaryColor) !important;\n  border-color: var(--appsmith-theme-primaryColor) !important;\n}",
+    "html": "<!DOCTYPE html>\n<html>\n<head>\n  <link rel=\"stylesheet\" href=\"https://unpkg.com/leaflet@1.9.4/dist/leaflet.css\" />\n  <script src=\"https://unpkg.com/leaflet@1.9.4/dist/leaflet.js\"></script>\n</head>\n<body>\n  <div id=\"map\" style=\"width: 100%; height: 100%;\"></div>\n  <script>\n    const map = L.map('map').setView([10.762622, 106.660172], 13);\n\n    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {\n      attribution: '&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors'\n    }).addTo(map);\n\n    // Static markers for testing\n    const markers = [\n      { lat: 10.762622, lon: 106.660172, name: \"Nguyen Van A\", description: \"Cần cứu trợ\" },\n      { lat: 10.763622, lon: 106.661172, name: \"Tran Thi B\", description: \"Hỗ trợ thực phẩm\" }\n    ];\n\n    markers.forEach(marker => {\n      L.marker([marker.lat, marker.lon]).addTo(map)\n        .bindPopup(`<strong>${marker.name}</strong><br>${marker.description}`);\n    });\n  </script>\n</body>\n</html>\n",
+    "js": "import React from 'https://cdn.jsdelivr.net/npm/react@18.2.0/+esm';\nimport reactDom from 'https://cdn.jsdelivr.net/npm/react-dom@18.2.0/+esm';\nimport { Button, Card } from 'https://cdn.jsdelivr.net/npm/antd@5.11.1/+esm';\nimport Markdown from 'https://cdn.jsdelivr.net/npm/react-markdown@9.0.1/+esm';\nfunction App() {\n  const [currentIndex, setCurrentIndex] = React.useState(0);\n  const handleNext = () => {\n    setCurrentIndex(prevIndex => (prevIndex + 1) % appsmith.model.tips.length);\n  };\n  const handleReset = () => {\n    setCurrentIndex(0);\n    appsmith.triggerEvent(\"onResetClick\");\n  };\n  return /*#__PURE__*/React.createElement(Card, {\n    className: \"app\"\n  }, /*#__PURE__*/React.createElement(\"div\", {\n    className: \"tip-container\"\n  }, /*#__PURE__*/React.createElement(\"div\", {\n    className: \"tip-header\"\n  }, /*#__PURE__*/React.createElement(\"h2\", null, \"Custom Widget\"), /*#__PURE__*/React.createElement(\"div\", null, currentIndex + 1, \" / \", appsmith.model.tips.length, \"  \")), /*#__PURE__*/React.createElement(Markdown, null, appsmith.model.tips[currentIndex])), /*#__PURE__*/React.createElement(\"div\", {\n    className: \"button-container\"\n  }, /*#__PURE__*/React.createElement(Button, {\n    className: \"primary\",\n    onClick: handleNext,\n    type: \"primary\"\n  }, \"Next Tip\"), /*#__PURE__*/React.createElement(Button, {\n    className: \"reset\",\n    disabled: currentIndex === 0,\n    onClick: handleReset\n  }, \"Reset\")));\n}\nappsmith.onReady(() => {\n  /*\n   * This handler function will get called when parent application is ready.\n   * Initialize your component here\n   * more info - https://docs.appsmith.com/reference/widgets/custom#onready\n   */\n  reactDom.render( /*#__PURE__*/React.createElement(App, null), document.getElementById(\"root\"));\n});"
+  },
+  "theme": "{{appsmith.theme}}",
+  "topRow": 6,
+  "type": "CUSTOM_WIDGET",
+  "uncompiledSrcDoc": {
+    "css": ".app {\n  width: calc(1px * var(--appsmith-ui-width));\n  justify-content: center;\n  border-radius: 0px;\n  border: none;\n  \n  .tip-container {\n    margin-bottom: 20px;\n\n    h2 {\n      margin-bottom: 20px;\n      font-size: 16px;\n      font-weight: 700;\n    }\n\n    .tip-header {\n      display: flex;\n      justify-content: space-between;\n      align-items: baseline;\n\n      div {\n        color: #999;\n      }\n    }\n  }\n\t\n\t.button-container {\n      text-align: right;\n\n      button {\n        margin: 0 10px;\n        border-radius: var(--appsmith-theme-borderRadius) !important;\n\n        &.primary {\n          background: var(--appsmith-theme-primaryColor) !important;\n        }\n\n        &.reset:not([disabled]) {\n          color: var(--appsmith-theme-primaryColor) !important;\n          border-color: var(--appsmith-theme-primaryColor) !important;\n        }\n      }\n    }\n}\n",
+    "html": "<!DOCTYPE html>\n<html>\n<head>\n  <link rel=\"stylesheet\" href=\"https://unpkg.com/leaflet@1.9.4/dist/leaflet.css\" />\n  <script src=\"https://unpkg.com/leaflet@1.9.4/dist/leaflet.js\"></script>\n</head>\n<body>\n  <div id=\"map\" style=\"width: 100%; height: 100%;\"></div>\n  <script>\n    const map = L.map('map').setView([10.762622, 106.660172], 13);\n\n    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {\n      attribution: '&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors'\n    }).addTo(map);\n\n    // Static markers for testing\n    const markers = [\n      { lat: 10.762622, lon: 106.660172, name: \"Nguyen Van A\", description: \"Cần cứu trợ\" },\n      { lat: 10.763622, lon: 106.661172, name: \"Tran Thi B\", description: \"Hỗ trợ thực phẩm\" }\n    ];\n\n    markers.forEach(marker => {\n      L.marker([marker.lat, marker.lon]).addTo(map)\n        .bindPopup(`<strong>${marker.name}</strong><br>${marker.description}`);\n    });\n  </script>\n</body>\n</html>\n",
+    "js": "import React from 'https://cdn.jsdelivr.net/npm/react@18.2.0/+esm'\nimport reactDom from 'https://cdn.jsdelivr.net/npm/react-dom@18.2.0/+esm'\nimport { Button, Card } from 'https://cdn.jsdelivr.net/npm/antd@5.11.1/+esm'\nimport Markdown from 'https://cdn.jsdelivr.net/npm/react-markdown@9.0.1/+esm';\n\nfunction App() {\n\tconst [currentIndex, setCurrentIndex] = React.useState(0);\n\n\tconst handleNext = () => {\n\t\tsetCurrentIndex((prevIndex) => (prevIndex + 1) % appsmith.model.tips.length);\n\t};\n\n\tconst handleReset = () => {\n\t\tsetCurrentIndex(0);\n\t\tappsmith.triggerEvent(\"onResetClick\");\n\t};\n\n\treturn (\n\t\t<Card className=\"app\">\n\t\t\t<div className=\"tip-container\">\n\t\t\t\t<div className=\"tip-header\">\n\t\t\t\t\t<h2>Custom Widget</h2>\n\t\t\t\t\t<div>{currentIndex + 1} / {appsmith.model.tips.length}\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<Markdown>{appsmith.model.tips[currentIndex]}</Markdown>\n\t\t\t</div>\n\t\t\t<div className=\"button-container\">\n\t\t\t\t<Button className=\"primary\" onClick={handleNext} type=\"primary\">Next Tip</Button>\n\t\t\t\t<Button className=\"reset\" disabled={currentIndex === 0} onClick={handleReset}>Reset</Button>\n\t\t\t</div>\n\t</Card>\n);\n}\n\nappsmith.onReady(() => {\n\t/*\n\t * This handler function will get called when parent application is ready.\n\t * Initialize your component here\n\t * more info - https://docs.appsmith.com/reference/widgets/custom#onready\n\t */\n\treactDom.render(<App />, document.getElementById(\"root\"));\n});"
+  },
+  "version": 1,
+  "widgetId": "ngj2bhof9d",
+  "widgetName": "Custom2"
+}

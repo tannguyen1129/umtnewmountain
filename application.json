@@ -56,6 +56,18 @@
     {
       "id": "CitizenRequest",
       "isDefault": false
+    },
+    {
+      "id": "AgencyNotification",
+      "isDefault": false
+    },
+    {
+      "id": "CitizenMap",
+      "isDefault": false
+    },
+    {
+      "id": "AgencyMap",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

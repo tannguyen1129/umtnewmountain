@@ -17,10 +17,10 @@
   "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
-      "key": "groupButtons.groupButtonh2d3yd3t90.onClick"
+      "key": "groupButtons.groupButton1.onClick"
     },
     {
-      "key": "groupButtons.groupButton1kty9k4m8h.onClick"
+      "key": "groupButtons.groupButtonh2d3yd3t90.onClick"
     }
   ],
   "groupButtons": {
@@ -34,6 +34,7 @@
       "isVisible": true,
       "label": "Trang chủ",
       "menuItems": {},
+      "onClick": "{{navigateTo('AgencyPage', {}, 'SAME_WINDOW');}}",
       "placement": "CENTER",
       "widgetId": ""
     },
@@ -46,9 +47,8 @@
       "isSeparator": false,
       "isVisible": true,
       "itemType": "BUTTON",
-      "label": "Yêu cầu hỗ trợ",
+      "label": "Yêu cầu hõ trợ",
       "menuItems": {},
-      "onClick": "{{navigateTo('CitizenRequest', {}, 'SAME_WINDOW');}}",
       "placement": "CENTER",
       "variant": "filled",
       "widgetId": "8ger804og6"
@@ -80,18 +80,33 @@
       "placement": "CENTER",
       "widgetId": ""
     },
+    "groupButton6bsvrq7t55": {
+      "buttonColor": "#ffffff",
+      "buttonType": "SIMPLE",
+      "id": "groupButton6bsvrq7t55",
+      "index": 3,
+      "isDisabled": false,
+      "isSeparator": false,
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "Tài nguyên",
+      "menuItems": {},
+      "placement": "CENTER",
+      "variant": "filled",
+      "widgetId": "s9r0zp78tc"
+    },
     "groupButtonh2d3yd3t90": {
       "buttonColor": "#ffffff",
       "buttonType": "SIMPLE",
       "id": "groupButtonh2d3yd3t90",
-      "index": 3,
+      "index": 4,
       "isDisabled": false,
       "isSeparator": false,
       "isVisible": true,
       "itemType": "BUTTON",
       "label": "Thông báo",
       "menuItems": {},
-      "onClick": "{{navigateTo('CitizenNotification', {}, 'SAME_WINDOW');}}",
+      "onClick": "{{navigateTo('AgencyNotificationPage', {}, 'SAME_WINDOW');}}",
       "placement": "CENTER",
       "variant": "filled",
       "widgetId": "dwe57gchy4"
@@ -112,14 +127,14 @@
   "originalBottomRow": 27,
   "originalTopRow": 23,
   "parentColumnSpace": 17.625,
-  "parentId": "e3dskecy0h",
+  "parentId": "y8bi9963pg",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 55,
+  "rightColumn": 54,
   "topRow": 2,
   "type": "BUTTON_GROUP_WIDGET",
   "version": 1,
-  "widgetId": "coiwhv9l8s",
+  "widgetId": "ooetjwrmh3",
   "widgetName": "ButtonGroup1"
 }

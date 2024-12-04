@@ -1,0 +1,66 @@
+{
+  "backgroundColor": "#FFFFFF",
+  "borderColor": "#E0DEDE",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "1",
+  "bottomRow": 131,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "defaultModel": "{\n  \"tips\": [\n    \"Pass data to this widget in the default model field\",\n    \"Access data in the javascript file using the appsmith.model variable\",\n    \"Create events in the widget and trigger them in the javascript file using appsmith.triggerEvent('eventName')\",\n    \"Access data in CSS as var(--appsmith-model-{property-name})\"\n  ]\n}",
+  "dynamicBindingPathList": [
+    {
+      "key": "theme"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [
+    {
+      "key": "onResetClick"
+    }
+  ],
+  "events": [
+    "onResetClick"
+  ],
+  "isCanvas": false,
+  "isLoading": false,
+  "isSearchWildcard": true,
+  "isVisible": true,
+  "key": "0grfj9thpp",
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 85,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 23,
+  "mobileTopRow": 55,
+  "needsErrorInfo": false,
+  "onResetClick": "{{showAlert('Successfully reset!!', '');}}",
+  "originalBottomRow": 131,
+  "originalTopRow": 85,
+  "parentColumnSpace": 19.8125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 64,
+  "srcDoc": {
+    "css": "",
+    "html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Flood Map</title>\n    <!-- Load Leaflet CSS -->\n    <link\n        rel=\"stylesheet\"\n        href=\"https://unpkg.com/leaflet@1.9.4/dist/leaflet.css\"\n    />\n    <style>\n        #map {\n            width: 100%;\n            height: 450px; /* Chiều cao tùy chỉnh */\n        }\n\n        #search-container {\n            position: absolute;\n            top: 10px;\n            left: 10px;\n            z-index: 1000;\n            background: white;\n            padding: 10px;\n            border-radius: 5px;\n            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);\n        }\n\n        #search-container input {\n            width: 300px;\n            padding: 5px;\n            font-size: 14px;\n        }\n\n        #search-container button {\n            padding: 5px 10px;\n            font-size: 14px;\n        }\n    </style>\n</head>\n<body>\n    <!-- Container chứa bản đồ -->\n    <div id=\"map\"></div>\n\n    <!-- Container tìm kiếm -->\n    <div id=\"search-container\">\n        <input type=\"text\" id=\"search-input\" placeholder=\"Nhập tên vùng thiên tai...\" />\n        <button id=\"search-button\">Tìm kiếm</button>\n    </div>\n\n    <!-- Load Leaflet JS -->\n    <script src=\"https://unpkg.com/leaflet@1.9.4/dist/leaflet.js\"></script>\n    <script>\n        // Tạo bản đồ\n        const map = L.map(\"map\").setView([16.5084, 107.2963], 10); // Vị trí mặc định (có thể thay đổi)\n\n        // Thêm tile layer từ OpenStreetMap\n        L.tileLayer(\"https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png\", {\n            maxZoom: 19,\n        }).addTo(map);\n\n        // Danh sách vùng thiên tai\n        let disasterZones = [];\n\n        // Hàm gọi API và vẽ vùng ảnh hưởng\n        async function fetchAndDrawDisasterZones() {\n            try {\n                // Gọi API\n                const response = await fetch(\"https://cors-anywhere.herokuapp.com/https://api.umtoj.edu.vn/api/zone/disaster-zones/\");\n                if (!response.ok) {\n                    throw new Error(\"Không thể lấy dữ liệu từ API\");\n                }\n\n                const data = await response.json();\n                disasterZones = data; // Lưu dữ liệu vùng thiên tai\n\n                // Kiểm tra dữ liệu trả về\n                console.log(\"Dữ liệu từ API:\", data);\n\n                // Duyệt qua từng vùng thiên tai và vẽ lên bản đồ\n                data.forEach(zone => {\n                    const latitude = parseFloat(zone.latitude); // Vĩ độ\n                    const longitude = parseFloat(zone.longitude); // Kinh độ\n                    const radius = parseFloat(zone.radius); // Bán kính\n\n                    if (!isNaN(latitude) && !isNaN(longitude) && !isNaN(radius)) {\n                        // Vẽ vùng ảnh hưởng\n                        const circle = L.circle([latitude, longitude], {\n                            color: \"red\",\n                            fillColor: \"#f03\",\n                            fillOpacity: 0.5,\n                            radius: radius, // Bán kính ảnh hưởng\n                        }).addTo(map);\n\n                        // Thêm popup mô tả\n                        circle.bindPopup(\n                            `<b>${zone.name_zone}</b><br>\n                             Loại thiên tai: ${zone.disaster_type}<br>\n                             Bán kính ảnh hưởng: ${radius}m<br>\n                             Mô tả: ${zone.description || \"Không có mô tả\"}`\n                        );\n                    } else {\n                        console.error(\"Dữ liệu không hợp lệ:\", zone);\n                    }\n                });\n            } catch (error) {\n                console.error(\"Lỗi khi lấy dữ liệu từ API:\", error);\n            }\n        }\n\n        // Gọi hàm để lấy dữ liệu và vẽ bản đồ\n        fetchAndDrawDisasterZones();\n\n        // Thêm sự kiện tìm kiếm\n        document.getElementById(\"search-button\").addEventListener(\"click\", () => {\n            const searchInput = document.getElementById(\"search-input\").value.trim().toLowerCase();\n\n            // Tìm kiếm vùng thiên tai theo tên\n            const zone = disasterZones.find(z => z.name_zone.toLowerCase().includes(searchInput));\n\n            if (zone) {\n                const latitude = parseFloat(zone.latitude);\n                const longitude = parseFloat(zone.longitude);\n                const radius = parseFloat(zone.radius);\n\n                // Zoom tới vùng thiên tai\n                map.setView([latitude, longitude], 12);\n\n                // Thêm marker hoặc popup\n                L.circle([latitude, longitude], {\n                    color: \"blue\",\n                    fillColor: \"#03f\",\n                    fillOpacity: 0.5,\n                    radius: radius,\n                }).addTo(map)\n                .bindPopup(\n                    `<b>${zone.name_zone}</b><br>\n                     Loại thiên tai: ${zone.disaster_type}<br>\n                     Bán kính ảnh hưởng: ${radius}m<br>\n                     Mô tả: ${zone.description || \"Không có mô tả\"}`\n                ).openPopup();\n            } else {\n                alert(\"Không tìm thấy vùng thiên tai nào phù hợp.\");\n            }\n        });\n    </script>\n</body>\n</html>\n",
+    "js": ""
+  },
+  "theme": "{{appsmith.theme}}",
+  "topRow": 85,
+  "type": "CUSTOM_WIDGET",
+  "uncompiledSrcDoc": {
+    "css": "",
+    "html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Flood Map</title>\n    <!-- Load Leaflet CSS -->\n    <link\n        rel=\"stylesheet\"\n        href=\"https://unpkg.com/leaflet@1.9.4/dist/leaflet.css\"\n    />\n    <style>\n        #map {\n            width: 100%;\n            height: 450px; /* Chiều cao tùy chỉnh */\n        }\n\n        #search-container {\n            position: absolute;\n            top: 10px;\n            left: 10px;\n            z-index: 1000;\n            background: white;\n            padding: 10px;\n            border-radius: 5px;\n            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);\n        }\n\n        #search-container input {\n            width: 300px;\n            padding: 5px;\n            font-size: 14px;\n        }\n\n        #search-container button {\n            padding: 5px 10px;\n            font-size: 14px;\n        }\n    </style>\n</head>\n<body>\n    <!-- Container chứa bản đồ -->\n    <div id=\"map\"></div>\n\n    <!-- Container tìm kiếm -->\n    <div id=\"search-container\">\n        <input type=\"text\" id=\"search-input\" placeholder=\"Nhập tên vùng thiên tai...\" />\n        <button id=\"search-button\">Tìm kiếm</button>\n    </div>\n\n    <!-- Load Leaflet JS -->\n    <script src=\"https://unpkg.com/leaflet@1.9.4/dist/leaflet.js\"></script>\n    <script>\n        // Tạo bản đồ\n        const map = L.map(\"map\").setView([16.5084, 107.2963], 10); // Vị trí mặc định (có thể thay đổi)\n\n        // Thêm tile layer từ OpenStreetMap\n        L.tileLayer(\"https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png\", {\n            maxZoom: 19,\n        }).addTo(map);\n\n        // Danh sách vùng thiên tai\n        let disasterZones = [];\n\n        // Hàm gọi API và vẽ vùng ảnh hưởng\n        async function fetchAndDrawDisasterZones() {\n            try {\n                // Gọi API\n                const response = await fetch(\"https://cors-anywhere.herokuapp.com/https://api.umtoj.edu.vn/api/zone/disaster-zones/\");\n                if (!response.ok) {\n                    throw new Error(\"Không thể lấy dữ liệu từ API\");\n                }\n\n                const data = await response.json();\n                disasterZones = data; // Lưu dữ liệu vùng thiên tai\n\n                // Kiểm tra dữ liệu trả về\n                console.log(\"Dữ liệu từ API:\", data);\n\n                // Duyệt qua từng vùng thiên tai và vẽ lên bản đồ\n                data.forEach(zone => {\n                    const latitude = parseFloat(zone.latitude); // Vĩ độ\n                    const longitude = parseFloat(zone.longitude); // Kinh độ\n                    const radius = parseFloat(zone.radius); // Bán kính\n\n                    if (!isNaN(latitude) && !isNaN(longitude) && !isNaN(radius)) {\n                        // Vẽ vùng ảnh hưởng\n                        const circle = L.circle([latitude, longitude], {\n                            color: \"red\",\n                            fillColor: \"#f03\",\n                            fillOpacity: 0.5,\n                            radius: radius, // Bán kính ảnh hưởng\n                        }).addTo(map);\n\n                        // Thêm popup mô tả\n                        circle.bindPopup(\n                            `<b>${zone.name_zone}</b><br>\n                             Loại thiên tai: ${zone.disaster_type}<br>\n                             Bán kính ảnh hưởng: ${radius}m<br>\n                             Mô tả: ${zone.description || \"Không có mô tả\"}`\n                        );\n                    } else {\n                        console.error(\"Dữ liệu không hợp lệ:\", zone);\n                    }\n                });\n            } catch (error) {\n                console.error(\"Lỗi khi lấy dữ liệu từ API:\", error);\n            }\n        }\n\n        // Gọi hàm để lấy dữ liệu và vẽ bản đồ\n        fetchAndDrawDisasterZones();\n\n        // Thêm sự kiện tìm kiếm\n        document.getElementById(\"search-button\").addEventListener(\"click\", () => {\n            const searchInput = document.getElementById(\"search-input\").value.trim().toLowerCase();\n\n            // Tìm kiếm vùng thiên tai theo tên\n            const zone = disasterZones.find(z => z.name_zone.toLowerCase().includes(searchInput));\n\n            if (zone) {\n                const latitude = parseFloat(zone.latitude);\n                const longitude = parseFloat(zone.longitude);\n                const radius = parseFloat(zone.radius);\n\n                // Zoom tới vùng thiên tai\n                map.setView([latitude, longitude], 12);\n\n                // Thêm marker hoặc popup\n                L.circle([latitude, longitude], {\n                    color: \"blue\",\n                    fillColor: \"#03f\",\n                    fillOpacity: 0.5,\n                    radius: radius,\n                }).addTo(map)\n                .bindPopup(\n                    `<b>${zone.name_zone}</b><br>\n                     Loại thiên tai: ${zone.disaster_type}<br>\n                     Bán kính ảnh hưởng: ${radius}m<br>\n                     Mô tả: ${zone.description || \"Không có mô tả\"}`\n                ).openPopup();\n            } else {\n                alert(\"Không tìm thấy vùng thiên tai nào phù hợp.\");\n            }\n        });\n    </script>\n</body>\n</html>\n",
+    "js": ""
+  },
+  "version": 1,
+  "widgetId": "lqt9oacfpu",
+  "widgetName": "Map_Agency"
+}

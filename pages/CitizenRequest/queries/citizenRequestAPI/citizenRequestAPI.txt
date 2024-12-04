@@ -1,0 +1,8 @@
+{
+  "full_name": "{{full_name.text}}",
+	"id_card": {{ID_Card.text}},
+  "phone_number": "{{Number_phone.text}}",
+  "support_type": "{{request_citizen.text}}",
+  "description": "{{detail_request_input.text}}",
+  "location": "{{location_request.text}}"
+}
