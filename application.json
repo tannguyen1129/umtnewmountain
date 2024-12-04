@@ -48,6 +48,10 @@
     {
       "id": "LoginPage",
       "isDefault": false
+    },
+    {
+      "id": "CitizenNotification",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 123,
+  "bottomRow": 67,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "canFreezeColumn": true,
   "childStylesheet": {
@@ -34,13 +34,15 @@
     "id",
     "title",
     "content",
-    "timestamp"
+    "timestamp",
+    "customColumn1"
   ],
-  "columnUpdatedAt": 1733216531886,
+  "columnUpdatedAt": 1733278115536,
   "columnWidthMap": {
-    "content": 666,
+    "content": 587,
     "id": 60,
-    "title": 288
+    "timestamp": 213,
+    "title": 281
   },
   "customIsLoading": false,
   "customIsLoadingValue": "",
@@ -61,9 +63,6 @@
       "key": "boxShadow"
     },
     {
-      "key": "tableData"
-    },
-    {
       "key": "primaryColumns.id.computedValue"
     },
     {
@@ -74,14 +73,33 @@
     },
     {
       "key": "primaryColumns.timestamp.computedValue"
+    },
+    {
+      "key": "primaryColumns.customColumn1.buttonColor"
+    },
+    {
+      "key": "primaryColumns.customColumn1.borderRadius"
+    },
+    {
+      "key": "primaryColumns.customColumn1.boxShadow"
+    },
+    {
+      "key": "tableData"
     }
   ],
   "dynamicPropertyPathList": [
     {
       "key": "tableData"
+    },
+    {
+      "key": "primaryColumns.customColumn1.onClick"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "primaryColumns.customColumn1.onClick"
+    }
+  ],
   "enableClientSideSearch": true,
   "flexVerticalAlignment": "start",
   "horizontalAlignment": "LEFT",
@@ -93,18 +111,18 @@
   "isVisibleFilters": false,
   "isVisiblePagination": true,
   "isVisibleSearch": true,
-  "key": "cng53zcw1r",
+  "key": "zge5cnn4o5",
   "label": "Data",
   "leftColumn": 0,
   "minWidth": 450,
-  "mobileBottomRow": 41,
-  "mobileLeftColumn": 30,
-  "mobileRightColumn": 64,
-  "mobileTopRow": 13,
+  "mobileBottomRow": 42,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 34,
+  "mobileTopRow": 14,
   "needsErrorInfo": false,
-  "originalBottomRow": 123,
-  "originalTopRow": 74,
-  "parentColumnSpace": 17.9375,
+  "originalBottomRow": 67,
+  "originalTopRow": 15,
+  "parentColumnSpace": 19.8125,
   "parentId": "0",
   "parentRowSpace": 10,
   "primaryColumns": {
@@ -112,14 +130,12 @@
       "alias": "content",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{TableNotification.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"content\"]))}}",
+      "computedValue": "{{Notification_Table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"content\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
-      "fontStyle": "",
       "horizontalAlignment": "LEFT",
       "id": "content",
       "index": 2,
@@ -135,7 +151,45 @@
       "notation": "standard",
       "originalId": "content",
       "sticky": "",
-      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "customColumn1": {
+      "alias": "Detail",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "borderRadius": "{{Notification_Table.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
+      "boxShadow": "{{Notification_Table.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
+      "buttonColor": "{{Notification_Table.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
+      "buttonLabel": "Xem chi tiết",
+      "buttonStyle": "rgb(3, 179, 101)",
+      "columnType": "button",
+      "computedValue": "",
+      "currencyCode": "USD",
+      "customAlias": "",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "customColumn1",
+      "index": 4,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": true,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Detail",
+      "labelColor": "#FFFFFF",
+      "notation": "standard",
+      "onClick": "{{showModal('detail_noti_citizen');\nstoreValue('selectedRow', currentRow);\n}}\n",
+      "originalId": "customColumn1",
+      "sticky": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -146,14 +200,12 @@
       "alias": "id",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
       "columnType": "number",
-      "computedValue": "{{TableNotification.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id\"]))}}",
+      "computedValue": "{{Notification_Table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
-      "fontStyle": "",
       "horizontalAlignment": "LEFT",
       "id": "id",
       "index": 0,
@@ -169,7 +221,6 @@
       "notation": "standard",
       "originalId": "id",
       "sticky": "",
-      "textColor": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -180,14 +231,12 @@
       "alias": "timestamp",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{TableNotification.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"timestamp\"]))}}",
+      "computedValue": "{{Notification_Table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"timestamp\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
-      "fontStyle": "",
       "horizontalAlignment": "LEFT",
       "id": "timestamp",
       "index": 3,
@@ -203,7 +252,6 @@
       "notation": "standard",
       "originalId": "timestamp",
       "sticky": "",
-      "textColor": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -214,14 +262,12 @@
       "alias": "title",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{TableNotification.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"title\"]))}}",
+      "computedValue": "{{Notification_Table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"title\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
-      "fontStyle": "",
       "horizontalAlignment": "LEFT",
       "id": "title",
       "index": 1,
@@ -237,7 +283,6 @@
       "notation": "standard",
       "originalId": "title",
       "sticky": "",
-      "textColor": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -247,15 +292,15 @@
   },
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 63,
+  "rightColumn": 64,
   "searchKey": "",
-  "tableData": "{{NotificationListAPI.data}}",
+  "tableData": "{{ getNotificationCitizenAPI.data}}",
   "textSize": "0.875rem",
-  "topRow": 74,
+  "topRow": 15,
   "totalRecordsCount": 0,
   "type": "TABLE_WIDGET_V2",
   "version": 2,
   "verticalAlignment": "CENTER",
-  "widgetId": "gbp915xwad",
-  "widgetName": "TableNotification"
+  "widgetId": "2blpe59iii",
+  "widgetName": "Notification_Table"
 }

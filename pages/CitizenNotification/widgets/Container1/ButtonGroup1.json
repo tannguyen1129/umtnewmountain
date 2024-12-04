@@ -15,7 +15,11 @@
     }
   ],
   "dynamicPropertyPathList": [],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "groupButtons.groupButton1.onClick"
+    }
+  ],
   "groupButtons": {
     "groupButton1": {
       "buttonColor": "#ffffff",
@@ -27,6 +31,7 @@
       "isVisible": true,
       "label": "Home",
       "menuItems": {},
+      "onClick": "{{navigateTo('CitizenPage', {}, 'SAME_WINDOW');}}",
       "placement": "CENTER",
       "widgetId": ""
     },
@@ -92,7 +97,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "hyy3mkgipc",
-  "leftColumn": 21,
+  "leftColumn": 22,
   "minWidth": 450,
   "mobileBottomRow": 10,
   "mobileLeftColumn": 10,
@@ -103,14 +108,14 @@
   "originalBottomRow": 27,
   "originalTopRow": 23,
   "parentColumnSpace": 17.625,
-  "parentId": "e3dskecy0h",
+  "parentId": "p08whgl30n",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 54,
+  "rightColumn": 55,
   "topRow": 2,
   "type": "BUTTON_GROUP_WIDGET",
   "version": 1,
-  "widgetId": "coiwhv9l8s",
+  "widgetId": "bxoaqenjuk",
   "widgetName": "ButtonGroup1"
 }

@@ -1,25 +1,23 @@
 {
-  "gitSyncId": "673eb342e443011fab9eaa76_3be14fda-b2a0-4135-b4f1-961f7ba0321e",
+  "gitSyncId": "673eb342e443011fab9eaa76_dcbe252f-ef36-4686-bf3a-6c0f590f2172",
   "unpublishedPage": {
-    "customSlug": "",
     "isHidden": false,
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 1310,
+          "bottomRow": 670,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
           "dynamicBindingPathList": [],
-          "dynamicTriggerPathList": [],
           "leftColumn": 0,
-          "minHeight": 1292,
+          "minHeight": 730,
           "parentColumnSpace": 1,
           "parentRowSpace": 1,
-          "rightColumn": 4896,
+          "rightColumn": 1224,
           "snapColumns": 64,
-          "snapRows": 124,
+          "snapRows": 71,
           "topRow": 0,
           "type": "CANVAS_WIDGET",
           "version": 90,
@@ -28,7 +26,7 @@
         }
       }
     ],
-    "name": "CitizenPage",
-    "slug": "citizenpage"
+    "name": "CitizenNotification",
+    "slug": "citizennotification"
   }
 }
