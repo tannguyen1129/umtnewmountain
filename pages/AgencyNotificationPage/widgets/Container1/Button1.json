@@ -11,6 +11,7 @@
       "key": "borderRadius"
     }
   ],
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [],
   "isDefaultClickDisabled": true,
   "isDisabled": false,
@@ -24,6 +25,7 @@
   "mobileRightColumn": 53,
   "mobileTopRow": 17,
   "needsErrorInfo": false,
+  "onClick": "{{}}",
   "originalBottomRow": 21,
   "originalTopRow": 17,
   "parentColumnSpace": 17.9375,
