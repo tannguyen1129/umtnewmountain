@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "673eb342e443011fab9eaa76_a4b1de0c-2b23-4f27-8216-d14fb84aa378",
+  "id": "AgencyMap_deleteZone",
+  "unpublishedCollection": {
+    "name": "deleteZone",
+    "pageId": "AgencyMap",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

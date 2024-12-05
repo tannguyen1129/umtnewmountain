@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 162,
+  "bottomRow": 178,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "canFreezeColumn": true,
   "childStylesheet": {
@@ -102,7 +102,11 @@
       "key": "tableData"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "primaryColumns.customColumn1.onClick"
+    }
+  ],
   "enableClientSideSearch": true,
   "flexVerticalAlignment": "start",
   "horizontalAlignment": "LEFT",
@@ -123,8 +127,8 @@
   "mobileRightColumn": 34,
   "mobileTopRow": 134,
   "needsErrorInfo": false,
-  "originalBottomRow": 162,
-  "originalTopRow": 134,
+  "originalBottomRow": 178,
+  "originalTopRow": 137,
   "parentColumnSpace": 19.8125,
   "parentId": "0",
   "parentRowSpace": 10,
@@ -159,6 +163,7 @@
       "label": "Xóa vùng",
       "labelColor": "#FFFFFF",
       "notation": "standard",
+      "onClick": "{{deleteZone.deleteZone();}}",
       "originalId": "customColumn1",
       "sticky": "",
       "textSize": "0.875rem",
@@ -391,7 +396,7 @@
   "searchKey": "",
   "tableData": "{{getMapAPI.data}}",
   "textSize": "0.875rem",
-  "topRow": 134,
+  "topRow": 137,
   "totalRecordsCount": 0,
   "type": "TABLE_WIDGET_V2",
   "version": 2,
