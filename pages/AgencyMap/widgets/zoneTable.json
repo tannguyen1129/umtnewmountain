@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 178,
+  "bottomRow": 120,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "canFreezeColumn": true,
   "childStylesheet": {
@@ -43,7 +43,11 @@
   "columnUpdatedAt": 1733343053747,
   "columnWidthMap": {
     "description": 310,
-    "id": 70
+    "id": 70,
+    "latitude": 113,
+    "longitude": 109,
+    "name_zone": 304,
+    "radius": 98
   },
   "customIsLoading": false,
   "customIsLoadingValue": "",
@@ -127,8 +131,8 @@
   "mobileRightColumn": 34,
   "mobileTopRow": 134,
   "needsErrorInfo": false,
-  "originalBottomRow": 178,
-  "originalTopRow": 137,
+  "originalBottomRow": 120,
+  "originalTopRow": 79,
   "parentColumnSpace": 19.8125,
   "parentId": "0",
   "parentRowSpace": 10,
@@ -396,7 +400,7 @@
   "searchKey": "",
   "tableData": "{{getMapAPI.data}}",
   "textSize": "0.875rem",
-  "topRow": 137,
+  "topRow": 79,
   "totalRecordsCount": 0,
   "type": "TABLE_WIDGET_V2",
   "version": 2,

@@ -1,8 +1,0 @@
-{
-  "name_zone": "{{namezoneInput.text}}",
-  "latitude": "{{latitudeInput.text}}",
-  "longitude": "{{longitudeInput.text}}",
-  "radius": "{{radiusInput.text}}",
-  "disaster_type": "{{disasterTypeInput.text}}",
-  "description": "{{descriptionInput.text}}"
-}

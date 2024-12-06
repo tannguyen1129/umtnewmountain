@@ -3,7 +3,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 118,
+  "bottomRow": 106,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "defaultModel": "",
   "dynamicBindingPathList": [
@@ -40,8 +40,8 @@
   "mobileTopRow": 137,
   "needsErrorInfo": false,
   "onResetClick": "{{showAlert('Successfully reset!!', '');}}",
-  "originalBottomRow": 118,
-  "originalTopRow": 90,
+  "originalBottomRow": 106,
+  "originalTopRow": 78,
   "parentColumnSpace": 19.8125,
   "parentId": "0",
   "parentRowSpace": 10,
@@ -53,7 +53,7 @@
     "js": "import React from 'https://cdn.jsdelivr.net/npm/react@18.2.0/+esm';\nimport reactDom from 'https://cdn.jsdelivr.net/npm/react-dom@18.2.0/+esm';\nimport { Button, Card } from 'https://cdn.jsdelivr.net/npm/antd@5.11.1/+esm';\nimport Markdown from 'https://cdn.jsdelivr.net/npm/react-markdown@9.0.1/+esm';\nfunction App() {\n  const [currentIndex, setCurrentIndex] = React.useState(0);\n  const handleNext = () => {\n    setCurrentIndex(prevIndex => (prevIndex + 1) % appsmith.model.tips.length);\n  };\n  const handleReset = () => {\n    setCurrentIndex(0);\n    appsmith.triggerEvent(\"onResetClick\");\n  };\n  return /*#__PURE__*/React.createElement(Card, {\n    className: \"app\"\n  }, /*#__PURE__*/React.createElement(\"div\", {\n    className: \"tip-container\"\n  }, /*#__PURE__*/React.createElement(\"div\", {\n    className: \"tip-header\"\n  }, /*#__PURE__*/React.createElement(\"h2\", null, \"Custom Widget\"), /*#__PURE__*/React.createElement(\"div\", null, currentIndex + 1, \" / \", appsmith.model.tips.length, \"  \")), /*#__PURE__*/React.createElement(Markdown, null, appsmith.model.tips[currentIndex])), /*#__PURE__*/React.createElement(\"div\", {\n    className: \"button-container\"\n  }, /*#__PURE__*/React.createElement(Button, {\n    className: \"primary\",\n    onClick: handleNext,\n    type: \"primary\"\n  }, \"Next Tip\"), /*#__PURE__*/React.createElement(Button, {\n    className: \"reset\",\n    disabled: currentIndex === 0,\n    onClick: handleReset\n  }, \"Reset\")));\n}\nappsmith.onReady(() => {\n  /*\n   * This handler function will get called when parent application is ready.\n   * Initialize your component here\n   * more info - https://docs.appsmith.com/reference/widgets/custom#onready\n   */\n  reactDom.render( /*#__PURE__*/React.createElement(App, null), document.getElementById(\"root\"));\n});"
   },
   "theme": "{{appsmith.theme}}",
-  "topRow": 90,
+  "topRow": 78,
   "type": "CUSTOM_WIDGET",
   "uncompiledSrcDoc": {
     "css": "/* Footer Styles */\n.disaster-relief-footer {\n  background-color: #b91c1c; /* Nền đỏ */\n  color: #ffffff; /* Màu chữ trắng */\n  padding: 20px 0;\n  font-family: Arial, sans-serif;\n}\n\n.footer-container {\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap;\n  max-width: 1200px;\n  margin: 0 auto;\n  padding: 20px;\n}\n\n.footer-about, .footer-contact, .footer-social {\n  flex: 1 1 calc(33.333% - 40px);\n  margin: 10px;\n}\n\n.footer-about h3 {\n  font-size: 20px;\n  margin-bottom: 10px;\n  color: #f0f0f0; /* Màu trắng nhạt */\n}\n\n.footer-about p {\n  font-size: 14px;\n  line-height: 1.6;\n  color: #ffffff; /* Màu chữ trắng */\n}\n\n.footer-contact h4, .footer-social h4 {\n  font-size: 18px;\n  margin-bottom: 10px;\n  color: #f5f5f5; /* Màu trắng nhạt */\n}\n\n.footer-contact p, .footer-social a {\n  font-size: 14px;\n  line-height: 1.6;\n  color: #ffffff; /* Màu chữ trắng */\n  text-decoration: none;\n}\n\n.footer-social a {\n  display: block;\n  margin: 5px 0;\n  transition: color 0.3s ease;\n}\n\n.footer-social a:hover {\n  color: #f0f0f0; /* Màu trắng nhạt hơn khi hover */\n}\n\n.footer-bottom {\n  text-align: center;\n  background-color: #991b1b; /* Nền đỏ đậm hơn một chút */\n  padding: 10px 0;\n  font-size: 14px;\n  color: #ffffff; /* Màu chữ trắng */\n  margin-top: 20px;\n}\n",

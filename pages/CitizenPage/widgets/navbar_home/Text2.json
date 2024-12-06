@@ -1,13 +1,10 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 5,
+  "bottomRow": 6,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
-    },
-    {
-      "key": "fontFamily"
     },
     {
       "key": "borderRadius"
@@ -15,34 +12,38 @@
   ],
   "dynamicHeight": "AUTO_HEIGHT",
   "dynamicTriggerPathList": [],
-  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "fontFamily": "System Default",
   "fontSize": "1.25rem",
   "fontStyle": "BOLD",
   "isLoading": false,
   "isVisible": true,
-  "key": "m4tk3flwlb",
-  "leftColumn": 1,
+  "key": "2nmbmtallq",
+  "leftColumn": 5,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 5,
-  "mobileLeftColumn": 1.5,
-  "mobileRightColumn": 25.5,
-  "mobileTopRow": 1,
+  "mobileBottomRow": 6,
+  "mobileLeftColumn": 5,
+  "mobileRightColumn": 21,
+  "mobileTopRow": 2,
   "needsErrorInfo": false,
+  "originalBottomRow": 6,
+  "originalTopRow": 2,
   "overflow": "NONE",
-  "parentId": "jpc31u8oxs",
+  "parentColumnSpace": 17.625,
+  "parentId": "e3dskecy0h",
+  "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 25,
+  "rightColumn": 13,
   "shouldTruncate": false,
-  "text": "Nhập thông tin vùng thiên tai",
+  "text": "Trang chủ",
   "textAlign": "LEFT",
-  "textColor": "#1e3a8a",
-  "topRow": 1,
+  "textColor": "#b91c1c",
+  "topRow": 2,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "mb0ga6nj1h",
-  "widgetName": "Text3"
+  "widgetId": "zlzi042xzx",
+  "widgetName": "Text2"
 }
