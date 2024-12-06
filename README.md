@@ -18,9 +18,9 @@ Phần mềm được đội ngũ tác giả của UMT.NewMountain open source t
 3. [Chức năng](#3-Chức-năng)
 4. [Cấu trúc thư mục dự án](#4-Cấu-trúc-thư-mục-dự-án)
 5. [Hướng dẫn cài đặt](#hướng-dẫn-cài-đặt)
-    - [5.1.📋 Yêu cầu - Prerequisites](#yêu-cầu-📋)
-    - [5.2.🔨 Dựng APIs](#🔨-cài-đặt)
-    - [5.3.🔨 Cài đặt](#🔨-cài-đặt)
+    - [5.1.📋 Yêu cầu - Prerequisites](#51-Yêu-cầu)
+    - [5.2.🔥 Dựng APIs](#52-dựng-apis-bằng-django)
+    - [5.3.🔨 Cài đặt](#53-cài-đặt)
 6. [Đóng góp](#6-Đóng-góp)
 7. [License (Giấy phép)](#7-License-(-Giấy-phép-))
 
@@ -77,6 +77,17 @@ Lệnh này sẽ tải xuống hình ảnh Docker cần thiết nếu nó không
 5. Điền thông tin của bạn để tạo tài khoản quản trị viên.
 
 6. Sau khi tạo tài khoản, bạn có thể bắt đầu với gói miễn phí hoặc kích hoạt phiên bản của mình bằng khóa cấp phép. Nếu bạn muốn tạo khóa cấp phép, hãy đăng ký trên `customer.appsmith.com` để tạo một khóa, sau đó tiến hành kích hoạt phiên bản của bạn bằng khóa cấp phép mới tạo
+
+#### 5.2. Dựng APIs bằng Django
+
+Xem trực tiếp hướng dẫn trong repo sau: [Backend Django](https://github.com/tannguyen1129/backend)
+
+#### 5.3. Hướng dẫn cài đặt 
+
+Truy cập vào Website Appsmith (nếu bạn muốn dùng Appsimth Cloud) hoặc truy cập địa chỉ máy chủ Appsmith bạn đã tự cài đặt. Rồi đăng nhập, bạn sẽ ở Workspace của Appsimth:
+
+<img width="958" alt="image" src="https://github.com/user-attachments/assets/7fe9e38d-46b5-4580-9b78-445bdeb78d64">
+
 
 ### 6. Đóng góp
 
