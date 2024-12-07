@@ -21,6 +21,9 @@
     },
     {
       "key": "groupButtons.groupButton1kty9k4m8h.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton1.onClick"
     }
   ],
   "groupButtons": {
@@ -34,6 +37,7 @@
       "isVisible": true,
       "label": "Trang chủ",
       "menuItems": {},
+      "onClick": "{{navigateTo('AgencyPage', {}, 'SAME_WINDOW');}}",
       "placement": "CENTER",
       "widgetId": ""
     },

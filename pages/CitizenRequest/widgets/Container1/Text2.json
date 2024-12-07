@@ -7,15 +7,12 @@
       "key": "truncateButtonColor"
     },
     {
-      "key": "fontFamily"
-    },
-    {
       "key": "borderRadius"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
   "dynamicTriggerPathList": [],
-  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "fontFamily": "Montserrat",
   "fontSize": "1.25rem",
   "fontStyle": "BOLD",
   "isLoading": false,
@@ -30,7 +27,7 @@
   "mobileRightColumn": 21,
   "mobileTopRow": 2,
   "needsErrorInfo": false,
-  "originalBottomRow": 6,
+  "originalBottomRow": 8,
   "originalTopRow": 2,
   "overflow": "NONE",
   "parentColumnSpace": 17.625,
@@ -38,7 +35,7 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 16,
+  "rightColumn": 17,
   "shouldTruncate": false,
   "text": "Gửi yêu cầu giúp đỡ",
   "textAlign": "LEFT",

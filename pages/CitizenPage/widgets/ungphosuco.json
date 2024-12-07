@@ -1,0 +1,41 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 125,
+  "boxShadow": "none",
+  "defaultImage": "https://api.umtoj.edu.vn/media/images/logo-ub-ungphosuco.jpg",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "enableDownload": false,
+  "enableRotation": false,
+  "flexVerticalAlignment": "start",
+  "image": "",
+  "imageShape": "RECTANGLE",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "f9ehc9cqyv",
+  "leftColumn": 53,
+  "maxZoomLevel": 1,
+  "mobileBottomRow": 121,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 10,
+  "mobileTopRow": 109,
+  "needsErrorInfo": false,
+  "objectFit": "cover",
+  "originalBottomRow": 125,
+  "originalTopRow": 109,
+  "parentColumnSpace": 17.9375,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 62,
+  "topRow": 109,
+  "type": "IMAGE_WIDGET",
+  "version": 1,
+  "widgetId": "v0te59dwum",
+  "widgetName": "ungphosuco"
+}
