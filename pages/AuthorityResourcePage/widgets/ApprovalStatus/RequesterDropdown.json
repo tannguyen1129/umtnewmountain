@@ -39,7 +39,7 @@
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "BOLD",
-  "labelText": "Requester name",
+  "labelText": "Tên yêu cầu",
   "labelTextColor": "#1e3a8a",
   "labelTextSize": "1rem",
   "labelWidth": 5,

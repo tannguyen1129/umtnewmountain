@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 123,
+  "bottomRow": 130,
   "boxShadow": "none",
   "defaultImage": "http://api.umtoj.edu.vn/media/images/boyte.jpg",
   "dynamicBindingPathList": [
@@ -9,7 +9,11 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "enableDownload": false,
   "enableRotation": false,
   "flexVerticalAlignment": "start",
@@ -18,7 +22,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "f9ehc9cqyv",
-  "leftColumn": 0,
+  "leftColumn": 8,
   "maxZoomLevel": 1,
   "mobileBottomRow": 121,
   "mobileLeftColumn": 0,
@@ -26,14 +30,15 @@
   "mobileTopRow": 109,
   "needsErrorInfo": false,
   "objectFit": "cover",
-  "originalBottomRow": 123,
-  "originalTopRow": 109,
+  "onClick": "{{imageBtn.openBoYTe();}}",
+  "originalBottomRow": 130,
+  "originalTopRow": 116,
   "parentColumnSpace": 17.9375,
   "parentId": "0",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "rightColumn": 8,
-  "topRow": 109,
+  "rightColumn": 16,
+  "topRow": 116,
   "type": "IMAGE_WIDGET",
   "version": 1,
   "widgetId": "lsy515nct8",

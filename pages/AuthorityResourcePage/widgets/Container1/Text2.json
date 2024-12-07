@@ -7,15 +7,12 @@
       "key": "truncateButtonColor"
     },
     {
-      "key": "fontFamily"
-    },
-    {
       "key": "borderRadius"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
   "dynamicTriggerPathList": [],
-  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "fontFamily": "Montserrat",
   "fontSize": "1.25rem",
   "fontStyle": "BOLD",
   "isLoading": false,
@@ -30,7 +27,7 @@
   "mobileRightColumn": 21,
   "mobileTopRow": 2,
   "needsErrorInfo": false,
-  "originalBottomRow": 7,
+  "originalBottomRow": 9,
   "originalTopRow": 1,
   "overflow": "NONE",
   "parentColumnSpace": 17.625,
@@ -38,7 +35,7 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 20,
+  "rightColumn": 23,
   "shouldTruncate": false,
   "text": "Trung tâm tài nguyên cứu trợ thảm họa, thiên tai",
   "textAlign": "LEFT",

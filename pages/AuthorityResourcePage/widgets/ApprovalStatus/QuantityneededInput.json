@@ -26,7 +26,7 @@
   "isRequired": false,
   "isVisible": true,
   "key": "rn127sofs8",
-  "label": "Quantity needed",
+  "label": "Số lượng cần thiết",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "BOLD",

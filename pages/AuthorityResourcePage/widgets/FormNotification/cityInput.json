@@ -23,7 +23,7 @@
   "isRequired": false,
   "isVisible": true,
   "key": "rn127sofs8",
-  "label": "Province or City",
+  "label": "Tỉnh/Thành phố",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "BOLD",

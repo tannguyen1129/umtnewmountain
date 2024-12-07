@@ -23,7 +23,7 @@
   "isRequired": false,
   "isVisible": true,
   "key": "rn127sofs8",
-  "label": "Describe the request in detail",
+  "label": "Miêu tả chi tiết yêu cầu",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "BOLD",

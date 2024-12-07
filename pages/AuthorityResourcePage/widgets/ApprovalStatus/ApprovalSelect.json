@@ -39,7 +39,7 @@
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "BOLD",
-  "labelText": "Approval Status",
+  "labelText": "Tình trạng phê duyệt",
   "labelTextColor": "#1e3a8a",
   "labelTextSize": "1rem",
   "labelWidth": 5,

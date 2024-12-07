@@ -1,15 +1,19 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 125,
+  "bottomRow": 130,
   "boxShadow": "none",
-  "defaultImage": "https://api.umtoj.edu.vn/media/images/logo-ub-ungphosuco.jpg",
+  "defaultImage": "https://api.umtoj.edu.vn/media/images/ub-ungpho-suco.png",
   "dynamicBindingPathList": [
     {
       "key": "borderRadius"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "enableDownload": false,
   "enableRotation": false,
   "flexVerticalAlignment": "start",
@@ -18,7 +22,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "f9ehc9cqyv",
-  "leftColumn": 53,
+  "leftColumn": 17,
   "maxZoomLevel": 1,
   "mobileBottomRow": 121,
   "mobileLeftColumn": 0,
@@ -26,14 +30,15 @@
   "mobileTopRow": 109,
   "needsErrorInfo": false,
   "objectFit": "cover",
-  "originalBottomRow": 125,
-  "originalTopRow": 109,
+  "onClick": "{{imageBtn.openUngPhoSuCo();}}",
+  "originalBottomRow": 130,
+  "originalTopRow": 116,
   "parentColumnSpace": 17.9375,
   "parentId": "0",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "rightColumn": 62,
-  "topRow": 109,
+  "rightColumn": 24,
+  "topRow": 116,
   "type": "IMAGE_WIDGET",
   "version": 1,
   "widgetId": "v0te59dwum",

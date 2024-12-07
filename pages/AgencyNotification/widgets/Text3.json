@@ -1,13 +1,10 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 19,
+  "bottomRow": 16,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
-    },
-    {
-      "key": "fontFamily"
     },
     {
       "key": "borderRadius"
@@ -15,7 +12,7 @@
   ],
   "dynamicHeight": "AUTO_HEIGHT",
   "dynamicTriggerPathList": [],
-  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "fontFamily": "Montserrat",
   "fontSize": "1.875rem",
   "fontStyle": "BOLD",
   "isLoading": false,
@@ -31,19 +28,19 @@
   "mobileTopRow": 12,
   "needsErrorInfo": false,
   "originalBottomRow": 19,
-  "originalTopRow": 14,
+  "originalTopRow": 11,
   "overflow": "NONE",
   "parentColumnSpace": 19.8125,
   "parentId": "0",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 30,
+  "rightColumn": 36,
   "shouldTruncate": false,
   "text": "Danh sách yêu cầu hỗ trợ từ người dân",
   "textAlign": "CENTER",
   "textColor": "#1e3a8a",
-  "topRow": 14,
+  "topRow": 11,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

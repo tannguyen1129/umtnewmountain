@@ -1,0 +1,50 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 5,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconName": "refresh",
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "iwh6ehjlzz",
+  "leftColumn": 14,
+  "minWidth": 50,
+  "mobileBottomRow": 5,
+  "mobileLeftColumn": 14,
+  "mobileRightColumn": 18,
+  "mobileTopRow": 1,
+  "needsErrorInfo": false,
+  "onClick": "{{\n    assignmentListAPI.run(\n        () => showAlert(\"Data refreshed successfully!\", \"success\"), // Thành công\n        (error) => showAlert(\"Failed to refresh data: \" + error, \"error\") // Thất bại\n    );\n}}",
+  "parentColumnSpace": 15.3125,
+  "parentId": "88k23wnz3o",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 18,
+  "topRow": 1,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "6alh5hqyas",
+  "widgetName": "refresh_assignment_list"
+}

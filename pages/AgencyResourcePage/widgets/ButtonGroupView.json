@@ -1,0 +1,133 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 16,
+  "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+  "buttonVariant": "PRIMARY",
+  "childStylesheet": {
+    "button": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "groupButtons.groupButton1.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton3.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton1kty9k4m8h.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton6bsvrq7t55.onClick"
+    }
+  ],
+  "groupButtons": {
+    "groupButton1": {
+      "buttonColor": "#b91c1c",
+      "buttonType": "SIMPLE",
+      "iconAlign": "left",
+      "id": "groupButton1",
+      "index": 0,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Danh sách tài nguyên",
+      "menuItems": {},
+      "onClick": "{{showModal(ResourcesList.name);}}",
+      "placement": "CENTER",
+      "widgetId": ""
+    },
+    "groupButton1kty9k4m8h": {
+      "buttonColor": "#ffffff",
+      "buttonType": "SIMPLE",
+      "id": "groupButton1kty9k4m8h",
+      "index": 1,
+      "isDisabled": false,
+      "isSeparator": false,
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "Danh sách yêu cầu",
+      "menuItems": {},
+      "onClick": "{{showModal(Dispath_list.name);}}",
+      "placement": "CENTER",
+      "variant": "filled",
+      "widgetId": "8ger804og6"
+    },
+    "groupButton3": {
+      "buttonColor": "#ffffff",
+      "buttonType": "SIMPLE",
+      "id": "groupButton3",
+      "index": 3,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Danh sách nhân sự phân công",
+      "menuItems": {
+        "menuItem3": {
+          "backgroundColor": "#DD4B34",
+          "iconAlign": "right",
+          "iconColor": "#FFFFFF",
+          "iconName": "trash",
+          "id": "menuItem3",
+          "index": 0,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Delete",
+          "onClick": "",
+          "textColor": "#FFFFFF",
+          "widgetId": ""
+        }
+      },
+      "onClick": "{{showModal(PersonnelList.name);}}",
+      "placement": "CENTER",
+      "widgetId": ""
+    },
+    "groupButton6bsvrq7t55": {
+      "buttonColor": "#b91c1c",
+      "buttonType": "SIMPLE",
+      "id": "groupButton6bsvrq7t55",
+      "index": 2,
+      "isDisabled": false,
+      "isSeparator": false,
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "Danh sách phân công",
+      "menuItems": {},
+      "onClick": "{{showModal(Assignment_List.name);}}",
+      "placement": "CENTER",
+      "variant": "filled",
+      "widgetId": "s9r0zp78tc"
+    }
+  },
+  "isCanvas": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "hyy3mkgipc",
+  "leftColumn": 26,
+  "minWidth": 450,
+  "mobileBottomRow": 10,
+  "mobileLeftColumn": 10,
+  "mobileRightColumn": 34,
+  "mobileTopRow": 6,
+  "needsErrorInfo": false,
+  "orientation": "horizontal",
+  "originalBottomRow": 16,
+  "originalTopRow": 12,
+  "parentColumnSpace": 17.625,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "topRow": 12,
+  "type": "BUTTON_GROUP_WIDGET",
+  "version": 1,
+  "widgetId": "38yvy1jqy7",
+  "widgetName": "ButtonGroupView"
+}

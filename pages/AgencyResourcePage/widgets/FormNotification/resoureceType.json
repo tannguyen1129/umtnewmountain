@@ -32,7 +32,7 @@
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "BOLD",
-  "labelText": "Resource type\n",
+  "labelText": "Loại tài nguyên yêu cầu",
   "labelTextColor": "#1e3a8a",
   "labelTextSize": "1rem",
   "labelWidth": 5,
