@@ -1,24 +1,21 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 7,
-  "disableLink": "{{}}",
+  "bottomRow": 6,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
+    },
+    {
+      "key": "fontFamily"
     },
     {
       "key": "borderRadius"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
-  "dynamicPropertyPathList": [
-    {
-      "key": "disableLink"
-    }
-  ],
   "dynamicTriggerPathList": [],
-  "fontFamily": "Montserrat",
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
   "fontSize": "1.25rem",
   "fontStyle": "BOLD",
   "isLoading": false,
@@ -33,23 +30,23 @@
   "mobileRightColumn": 21,
   "mobileTopRow": 2,
   "needsErrorInfo": false,
-  "originalBottomRow": 7,
-  "originalTopRow": 1,
+  "originalBottomRow": 8,
+  "originalTopRow": 2,
   "overflow": "NONE",
   "parentColumnSpace": 17.625,
-  "parentId": "r6fvfh5861",
+  "parentId": "v5wn742ndv",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 22,
+  "rightColumn": 21,
   "shouldTruncate": false,
-  "text": "Thông báo của Cơ quan cứu trợ",
+  "text": "Đánh dấu bản đồ cảnh báo",
   "textAlign": "LEFT",
   "textColor": "#b91c1c",
-  "topRow": 1,
+  "topRow": 2,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "2fn6smh9ar",
-  "widgetName": "agency_notification"
+  "widgetId": "fa08tqp5iq",
+  "widgetName": "Header_text"
 }

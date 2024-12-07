@@ -1,0 +1,6 @@
+{
+  "full_name": "{{fullnameInput.text}}",
+  "email": "{{emailInput.text}}",
+  "phone": "{{phoneInput.text}}",
+  "address": "{{addressInput.text}}"
+}

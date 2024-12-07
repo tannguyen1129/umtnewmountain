@@ -7,14 +7,12 @@
       "key": "truncateButtonColor"
     },
     {
-      "key": "fontFamily"
-    },
-    {
       "key": "borderRadius"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
-  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "dynamicTriggerPathList": [],
+  "fontFamily": "Montserrat",
   "fontSize": "1.25rem",
   "fontStyle": "BOLD",
   "isLoading": false,
@@ -35,7 +33,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 41,
   "shouldTruncate": false,
-  "text": "Modal Title",
+  "text": "Đăng ký nhận tin, thông báo",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 1,

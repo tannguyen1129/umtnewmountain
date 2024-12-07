@@ -21,6 +21,12 @@
     },
     {
       "key": "groupButtons.groupButtonh2d3yd3t90.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton1kty9k4m8h.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton3.onClick"
     }
   ],
   "groupButtons": {
@@ -49,6 +55,7 @@
       "itemType": "BUTTON",
       "label": "Yêu cầu giúp đỡ",
       "menuItems": {},
+      "onClick": "{{navigateTo('AgencyRequests', {}, 'SAME_WINDOW');}}",
       "placement": "CENTER",
       "variant": "filled",
       "widgetId": "8ger804og6"
@@ -77,6 +84,7 @@
           "widgetId": ""
         }
       },
+      "onClick": "{{navigateTo('AgencyMap', {}, 'SAME_WINDOW');}}",
       "placement": "CENTER",
       "widgetId": ""
     },

@@ -17,13 +17,10 @@
   "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
-      "key": "groupButtons.groupButton6bsvrq7t55.onClick"
+      "key": "groupButtons.groupButton1.onClick"
     },
     {
       "key": "groupButtons.groupButtonh2d3yd3t90.onClick"
-    },
-    {
-      "key": "groupButtons.groupButton1kty9k4m8h.onClick"
     }
   ],
   "groupButtons": {
@@ -37,6 +34,7 @@
       "isVisible": true,
       "label": "Trang chủ",
       "menuItems": {},
+      "onClick": "{{navigateTo('AgencyPage', {}, 'SAME_WINDOW');}}",
       "placement": "CENTER",
       "widgetId": ""
     },
@@ -49,9 +47,8 @@
       "isSeparator": false,
       "isVisible": true,
       "itemType": "BUTTON",
-      "label": "Yêu cầu giúp đỡ",
+      "label": "Yêu cầu hõ trợ",
       "menuItems": {},
-      "onClick": "{{navigateTo('AgencyResourcePage', {}, 'SAME_WINDOW');}}",
       "placement": "CENTER",
       "variant": "filled",
       "widgetId": "8ger804og6"
@@ -63,7 +60,7 @@
       "index": 1,
       "isDisabled": false,
       "isVisible": true,
-      "label": "Bản đồ vùng thiên tai",
+      "label": "Bản đồ cảnh báo",
       "menuItems": {
         "menuItem3": {
           "backgroundColor": "#DD4B34",
@@ -94,7 +91,6 @@
       "itemType": "BUTTON",
       "label": "Tài nguyên",
       "menuItems": {},
-      "onClick": "{{navigateTo('AgencyResourcePage', {}, 'SAME_WINDOW');}}",
       "placement": "CENTER",
       "variant": "filled",
       "widgetId": "s9r0zp78tc"
@@ -131,7 +127,7 @@
   "originalBottomRow": 27,
   "originalTopRow": 23,
   "parentColumnSpace": 17.625,
-  "parentId": "2kyuey8meu",
+  "parentId": "v5wn742ndv",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
@@ -139,6 +135,6 @@
   "topRow": 2,
   "type": "BUTTON_GROUP_WIDGET",
   "version": 1,
-  "widgetId": "70ag50bcwj",
-  "widgetName": "btnGroupAgencypage"
+  "widgetId": "be87jjy62l",
+  "widgetName": "BtnGroupAgencyMap"
 }
