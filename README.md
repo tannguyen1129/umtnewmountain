@@ -15,14 +15,15 @@ Phần mềm được đội ngũ tác giả của UMT.NewMountain open source t
 
 1. [Giới Thiệu](#1-giới-thiệu)
 2. [Tổng quan hệ thống](#2-tổng-quan-hệ-thống)
-3. [Chức năng](#3-Chức-năng)
-4. [Cấu trúc thư mục dự án](#4-Cấu-trúc-thư-mục-dự-án)
-5. [Hướng dẫn cài đặt](#hướng-dẫn-cài-đặt)
+3. [Chức năng](#3-chức-năng)
+4. [Screens Flow của dự án](#4-screens-flow-của-dự-án)
+5. [Hướng dẫn cài đặt](#5-hướng-dẫn-cài-đặt)
     - [5.1.📋 Yêu cầu - Prerequisites](#51-Yêu-cầu)
     - [5.2.🔥 Dựng APIs](#52-dựng-apis-bằng-django)
     - [5.3.🔨 Cài đặt](#53-hướng-dẫn-cài-đặt)
-6. [Đóng góp](#6-Đóng-góp)
-7. [License (Giấy phép)](#7-License-(-Giấy-phép-))
+6. [Đóng góp](#6-đóng-gópp)
+7. [Liên lạc](#7-liên-lạc)
+8. [License (Giấy phép)](#8-license)
 
 ### 1. Giới thiệu
 
@@ -190,9 +191,11 @@ Xong bạn chỉ cần bấm `Save` là ứng dụng có thể sẵn sàng sử 
 
 ### 6. Đóng góp
 
-### 7. License
+### 7. Liên lạc
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+### 8. License
+
+Dự án này được cấp phép theo Giấy phép MIT - xem tệp [LICENSE](LICENSE) để biết chi tiết.
 
 # umtnewmountain![](https://raw.githubusercontent.com/appsmithorg/appsmith/release/static/appsmith_logo_primary.png)
 
