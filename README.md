@@ -14,7 +14,7 @@ Dự án được thực hiện nhằm mục đích tham gia bảng [Phần mề
 
 Phần mềm được đội ngũ tác giả của UMT.NewMountain open source theo giấy phép [The MIT License](https://opensource.org/license/mit)
 
-**Live Demo:**
+**Live Demo:** rescue.umtoj.edu.vn
 
 ## Mục lục tài liệu
 
