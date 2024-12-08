@@ -84,13 +84,22 @@ Xem trực tiếp hướng dẫn trong repo sau: [Backend Django](https://github
 
 #### 5.3. Hướng dẫn cài đặt 
 
-Trước tiên bạn hãy `fork` reposity của dự án về Gihub của mình
+Trước tiên bạn hãy `fork` repository của dự án về Github của mình, sau đó đặt tên repository tùy thích theo ý muốn của bạn.
 
 <img width="938" alt="image" src="https://github.com/user-attachments/assets/9423a12e-ac90-488c-a87c-449fa5623925">
 
-Truy cập vào Website Appsmith (nếu bạn muốn dùng Appsimth Cloud) hoặc truy cập địa chỉ máy chủ Appsmith bạn đã tự cài đặt. Rồi đăng nhập, bạn sẽ ở Workspace của Appsimth:
+<img width="557" alt="image" src="https://github.com/user-attachments/assets/fd00f1e0-3c4a-43fd-94c4-95055c3a8503">
+
+Sau đó, hãy truy cập vào Website của Appsmith (nếu bạn muốn dùng Appsimth Cloud) hoặc truy cập địa chỉ máy chủ Appsmith bạn đã tự cài đặt. Rồi đăng nhập, bạn sẽ ở Workspace của Appsimth:
 
 <img width="958" alt="image" src="https://github.com/user-attachments/assets/7fe9e38d-46b5-4580-9b78-445bdeb78d64">
+
+Chọn Create New , rồi chọn chọn Import:
+
+<img width="167" alt="image" src="https://github.com/user-attachments/assets/1223391e-f782-4eee-8668-faaaf732aca9">
+
+Tới đây bạn chọn `Import from Git repository (Beta)`
+
 
 
 ### 6. Đóng góp
