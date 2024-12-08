@@ -20,7 +20,7 @@ Phần mềm được đội ngũ tác giả của UMT.NewMountain open source t
 5. [Hướng dẫn cài đặt](#hướng-dẫn-cài-đặt)
     - [5.1.📋 Yêu cầu - Prerequisites](#51-Yêu-cầu)
     - [5.2.🔥 Dựng APIs](#52-dựng-apis-bằng-django)
-    - [5.3.🔨 Cài đặt](#53-cài-đặt)
+    - [5.3.🔨 Cài đặt](#53-hướng-dẫn-cài-đặt)
 6. [Đóng góp](#6-Đóng-góp)
 7. [License (Giấy phép)](#7-License-(-Giấy-phép-))
 
