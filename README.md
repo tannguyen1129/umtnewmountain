@@ -32,6 +32,8 @@ Phần mềm được đội ngũ tác giả của UMT.NewMountain open source t
 
 ### 2. Tổng quan hệ thống
 
+![Frontend](https://github.com/user-attachments/assets/4ff23cfb-938c-4dbb-a95c-6d44edfdf227)
+
 ### 3. Chức năng
 
 ### 4. Cấu trúc thư mục dự án
