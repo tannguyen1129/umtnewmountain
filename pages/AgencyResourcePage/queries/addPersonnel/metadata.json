@@ -11,7 +11,7 @@
           "value": "application/json"
         }
       ],
-      "body": "{\n  \"name\": \"{{NamePersonnel.text}}\",\n  \"role\": \"{{rolemissionInput.text}}\",\n  \"quantity\": \"{{quantityInput.text}}\",\n  \"location\": \"{{locationInput.text}}\",\n  \"contact\": \"{{contactInput.text}}\"\n}",
+      "body": "{\n  \"personnel_name\": \"{{NamePersonnel.text}}\",\n  \"role\": \"{{rolemissionInput.text}}\",\n  \"quantity\": \"{{quantityInput.text}}\",\n  \"location\": \"{{locationInput.text}}\",\n  \"contact\": \"{{contactInput.text}}\"\n}",
       "bodyFormData": [],
       "encodeParamsToggle": true,
       "formData": {

@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "673eb342e443011fab9eaa76_9dbcbfd1-eb3a-46de-8367-5266be15ac18",
-  "id": "AgencyResourcePage_requestListAPI",
+  "gitSyncId": "673eb342e443011fab9eaa76_71791c9a-e1ed-4f44-af31-0c9dc05e1ae3",
+  "id": "AgencyResourcePage_addAssignment",
   "pluginId": "restapi-plugin",
   "pluginType": "API",
   "unpublishedAction": {
@@ -11,22 +11,17 @@
           "value": "application/json"
         }
       ],
-      "body": "",
+      "body": "{\n  \"request\": \"{{requests_name.selectedOptionValue}}\",\n  \"assigned_resources\": \"{{resource_name_assign.selectedOptionValue}}\",\n  \"quantity_needed\": \"{{resource_need.text}}\",\n  \"unit\": \"{{unit_resource.text}}\",\n  \"assigned_personnel\": \"{{personnel_assign.selectedOptionValue}}\",\n  \"role_in_assignment\": \"{{personnel_role.text}}\",\n  \"quantity_assigned\": \"{{Number_of_personnel.text}}\"\n}\n",
       "bodyFormData": [],
       "encodeParamsToggle": true,
       "formData": {
         "apiContentType": "application/json"
       },
-      "headers": [
-        {
-          "key": "Authorization",
-          "value": "Bearer {{appsmith.store.access_token}}"
-        }
-      ],
-      "httpMethod": "GET",
+      "headers": [],
+      "httpMethod": "POST",
       "httpVersion": "HTTP11",
       "paginationType": "NONE",
-      "path": "/api/coordination/agency/dispatch_requests/",
+      "path": "api/coordination/agency/create_assignment/",
       "pluginSpecifiedTemplates": [
         {
           "value": true
@@ -44,11 +39,11 @@
     },
     "dynamicBindingPathList": [
       {
-        "key": "headers[0].value"
+        "key": "body"
       }
     ],
-    "executeOnLoad": true,
-    "name": "requestListAPI",
+    "executeOnLoad": false,
+    "name": "addAssignment",
     "pageId": "AgencyResourcePage",
     "userSetOnLoad": false
   }

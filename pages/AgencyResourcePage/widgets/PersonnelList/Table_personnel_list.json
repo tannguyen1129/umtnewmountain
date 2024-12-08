@@ -32,18 +32,19 @@
   },
   "columnOrder": [
     "id",
-    "name",
+    "personnel_name",
     "role",
     "quantity",
     "location",
     "contact",
     "availability_status"
   ],
-  "columnUpdatedAt": 1732680457099,
+  "columnUpdatedAt": 1733647446935,
   "columnWidthMap": {
     "id": 60,
     "location": 325,
-    "name": 260
+    "name": 260,
+    "personnel_name": 363
   },
   "customIsLoading": false,
   "customIsLoadingValue": "",
@@ -67,9 +68,6 @@
       "key": "primaryColumns.id.computedValue"
     },
     {
-      "key": "primaryColumns.name.computedValue"
-    },
-    {
       "key": "primaryColumns.role.computedValue"
     },
     {
@@ -83,6 +81,9 @@
     },
     {
       "key": "primaryColumns.quantity.computedValue"
+    },
+    {
+      "key": "primaryColumns.personnel_name.computedValue"
     },
     {
       "key": "tableData"
@@ -242,18 +243,20 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "name": {
-      "alias": "name",
+    "personnel_name": {
+      "alias": "personnel_name",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{Table_personnel_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"name\"]))}}",
+      "computedValue": "{{Table_personnel_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"personnel_name\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
+      "fontStyle": "",
       "horizontalAlignment": "LEFT",
-      "id": "name",
+      "id": "personnel_name",
       "index": 1,
       "isCellEditable": false,
       "isCellVisible": true,
@@ -263,10 +266,11 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "name",
+      "label": "personnel_name",
       "notation": "standard",
-      "originalId": "name",
+      "originalId": "personnel_name",
       "sticky": "",
+      "textColor": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},

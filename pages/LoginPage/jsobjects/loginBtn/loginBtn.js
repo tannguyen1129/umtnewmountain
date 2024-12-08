@@ -47,8 +47,5 @@ export default {
 
 		// Hiển thị thông báo đăng xuất
 		showAlert('Logged out successfully!', 'success');
-
-		// Chuyển hướng về LoginPage
-		navigateTo('LoginPage', {}, 'SAME_WINDOW');
 	},
 };

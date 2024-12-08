@@ -40,7 +40,8 @@
   ],
   "columnUpdatedAt": 1733594888884,
   "columnWidthMap": {
-    "email": 175
+    "email": 175,
+    "id": 76
   },
   "customIsLoading": false,
   "customIsLoadingValue": "",

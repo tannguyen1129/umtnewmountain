@@ -67,7 +67,7 @@
       "index": 3,
       "isDisabled": false,
       "isVisible": true,
-      "label": "Danh sách nhân sự phân công",
+      "label": "Danh sách nhân sự",
       "menuItems": {
         "menuItem3": {
           "backgroundColor": "#DD4B34",

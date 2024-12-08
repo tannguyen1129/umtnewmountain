@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 35,
+  "bottomRow": 87,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "canFreezeColumn": true,
   "childStylesheet": {
@@ -123,7 +123,7 @@
   "isVisibleSearch": true,
   "key": "ea6foptojz",
   "label": "Data",
-  "leftColumn": 1,
+  "leftColumn": 0,
   "minWidth": 450,
   "mobileBottomRow": 35,
   "mobileLeftColumn": 1,

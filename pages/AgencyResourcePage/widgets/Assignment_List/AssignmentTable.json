@@ -42,8 +42,8 @@
   ],
   "columnUpdatedAt": 1733219218399,
   "columnWidthMap": {
-    "assigned_personnel": 263,
-    "assigned_resources": 197,
+    "assigned_personnel": 310,
+    "assigned_resources": 238,
     "id": 60,
     "request": 242,
     "request_details": 238
@@ -417,7 +417,7 @@
   },
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 64,
+  "rightColumn": 63,
   "searchKey": "",
   "tableData": "{{assignmentListAPI.data}}",
   "textSize": "0.875rem",

@@ -1,0 +1,9 @@
+{
+  "request": "{{requests_name.selectedOptionValue}}",
+  "assigned_resources": "{{resource_name_assign.selectedOptionValue}}",
+  "quantity_needed": "{{resource_need.text}}",
+  "unit": "{{unit_resource.text}}",
+  "assigned_personnel": "{{personnel_assign.selectedOptionValue}}",
+  "role_in_assignment": "{{personnel_role.text}}",
+  "quantity_assigned": "{{Number_of_personnel.text}}"
+}
