@@ -88,7 +88,9 @@ Trước tiên bạn hãy `fork` repository của dự án về Github của mì
 
 <img width="938" alt="image" src="https://github.com/user-attachments/assets/9423a12e-ac90-488c-a87c-449fa5623925">
 
-<img width="557" alt="image" src="https://github.com/user-attachments/assets/fd00f1e0-3c4a-43fd-94c4-95055c3a8503">
+Chọn Create Fork để fork repository về:
+
+<img width="550" alt="image" src="https://github.com/user-attachments/assets/7af3ab3d-5a09-4f63-8950-dba9f936f6af">
 
 Sau đó, hãy truy cập vào Website của Appsmith (nếu bạn muốn dùng Appsimth Cloud) hoặc truy cập địa chỉ máy chủ Appsmith bạn đã tự cài đặt. Rồi đăng nhập, bạn sẽ ở Workspace của Appsimth:
 
@@ -98,7 +100,13 @@ Chọn Create New , rồi chọn chọn Import:
 
 <img width="167" alt="image" src="https://github.com/user-attachments/assets/1223391e-f782-4eee-8668-faaaf732aca9">
 
-Tới đây bạn chọn `Import from Git repository (Beta)`
+Tới đây bạn chọn `Import from Git repository (Beta)`:
+
+<img width="529" alt="image" src="https://github.com/user-attachments/assets/b996bcff-04b2-4cec-92fd-f5b5eafa4523">
+
+Tiếp tục chọn Github -> Tích vào ô `I have an existing appsmith app connected to Git*` -> Chọn `Configure Git` (theo thứ tự 1, 2, 3) 
+
+<img width="481" alt="image" src="https://github.com/user-attachments/assets/8dd6b38e-bf62-4547-b09a-426107f2b50d">
 
 
 
