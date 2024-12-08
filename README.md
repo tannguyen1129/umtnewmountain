@@ -1,11 +1,11 @@
 # RESCUE SYSTEM - UMT.NEWMOUNTAIN
 
-<a href="https://github.com/tannguyen1129/umtnewmountain/issues/new?assignees=&labels=bug&projects=&template=bug_report.md&title=%5BBug%5D%3A+%3CM%C3%B4+t%E1%BA%A3+ng%E1%BA%AFn+g%E1%BB%8Dn+v%E1%BB%81+l%E1%BB%97i%3">Báo cáo lỗi (Bug Report)🆘🆘
+<a href="https://github.com/tannguyen1129/umtnewmountain/issues/new?assignees=&labels=bug&projects=&template=bug_report.md&title=%5BBug%5D%3A+%3CM%C3%B4+t%E1%BA%A3+ng%E1%BA%AFn+g%E1%BB%8Dn+v%E1%BB%81+l%E1%BB%97i%3E">Báo cáo lỗi (Bug Report)🆘🆘
 </a>
 
-Ứng dụng hỗ trợ điều phối, thông báo, cập nhật thông tin ứng phó thiên tai, tham họa. Ở dự án này nhom tác giả chọn Appsimth để dựng Frontend và Django để dựng API Backend
+Ứng dụng hỗ trợ điều phối, thông báo, cập nhật thông tin ứng phó thiên tai, tham họa. Ở dự án này nhóm tác giả chọn Appsimth để dựng Frontend và Django để dựng APIs Backend
 
-Phát triển hệ thống ứng dụng công nghệ thông tin trong ứng phó và hỗ trợ khắc phục thiên tai.
+Phát triển hệ thống ứng dụng công nghệ thông tin trong ứng phó và hỗ trợ khắc phục trong các tình huống khẩn cấp.
 
 Dự án được thực hiện nhằm mục đích tham gia bảng [Phần mềm Nguồn Mở](https://www.olp.vn/procon-pmmn/ph%E1%BA%A7n-m%E1%BB%81m-ngu%E1%BB%93n-m%E1%BB%9F) trong khuôn khổ [Kỳ thi Olympic Tin học sinh viên Việt Nam lần thứ 33](https://www.olp.vn/olympic-tin-h%E1%BB%8Dc-sinh-vi%C3%AAn) tổ chức tại [Trường Đại học Công nghiệp Hà Nội](https://www.haui.edu.vn/vn) từ ngày 10/12/2024 đến ngày 13/12/2024.
 
@@ -20,13 +20,19 @@ Phần mềm được đội ngũ tác giả của UMT.NewMountain open source t
 5. [Hướng dẫn cài đặt](#hướng-dẫn-cài-đặt)
     - [5.1.📋 Yêu cầu - Prerequisites](#51-Yêu-cầu)
     - [5.2.🔥 Dựng APIs](#52-dựng-apis-bằng-django)
-    - [5.3.🔨 Cài đặt](#53-cài-đặt)
+    - [5.3.🔨 Cài đặt](#53-hướng-dẫn-cài-đặt)
 6. [Đóng góp](#6-Đóng-góp)
 7. [License (Giấy phép)](#7-License-(-Giấy-phép-))
 
 ### 1. Giới thiệu
 
+- Nền tảng phát triển ứng dụng LCDP (Low-Code Development Platform) ít mã nguồn thường cung cấp một môi trường giúp phát triển ứng dụng mà không yêu cầu viết nhiều mã nguồn thủ công. Các nền tảng này giúp giảm thiểu công sức lập trình bằng cách sử dụng giao diện kéo và thả hoặc các công cụ cấu hình để tạo ra các ứng dụng. Đây là một trong những đặc điểm quan trọng của LCDP trong hoàn cảnh ứng phó tình huống khẩn cấp.
+
+- Nước ta vừa qua cũng trải qua những tình huống khẩn cấp như dịch bệnh hoặc thiên tai. Vào những thời điểm này xuất hiện nhu cầu kết nối với cộng động, cơ quan chức năng phục vụ các hoạt động ứng phó và khắc phục hậu quả do các tình huống khẩn cấp gây ra.
+
 ### 2. Tổng quan hệ thống
+
+![Frontend](https://github.com/user-attachments/assets/4ff23cfb-938c-4dbb-a95c-6d44edfdf227)
 
 ### 3. Chức năng
 
@@ -84,10 +90,70 @@ Xem trực tiếp hướng dẫn trong repo sau: [Backend Django](https://github
 
 #### 5.3. Hướng dẫn cài đặt 
 
-Truy cập vào Website Appsmith (nếu bạn muốn dùng Appsimth Cloud) hoặc truy cập địa chỉ máy chủ Appsmith bạn đã tự cài đặt. Rồi đăng nhập, bạn sẽ ở Workspace của Appsimth:
+Trước tiên bạn hãy `fork` repository của dự án về Github của mình, sau đó đặt tên repository tùy thích theo ý muốn của bạn.
+
+<img width="938" alt="image" src="https://github.com/user-attachments/assets/9423a12e-ac90-488c-a87c-449fa5623925">
+
+Chọn Create Fork để fork repository về:
+
+<img width="550" alt="image" src="https://github.com/user-attachments/assets/7af3ab3d-5a09-4f63-8950-dba9f936f6af">
+
+Sau đó, hãy truy cập vào Website của Appsmith (nếu bạn muốn dùng Appsimth Cloud) hoặc truy cập địa chỉ máy chủ Appsmith bạn đã tự cài đặt. Rồi đăng nhập, bạn sẽ ở Workspace của Appsimth:
 
 <img width="958" alt="image" src="https://github.com/user-attachments/assets/7fe9e38d-46b5-4580-9b78-445bdeb78d64">
 
+Chọn Create New , rồi chọn chọn Import:
+
+<img width="167" alt="image" src="https://github.com/user-attachments/assets/1223391e-f782-4eee-8668-faaaf732aca9">
+
+Tới đây bạn chọn `Import from Git repository (Beta)`:
+
+<img width="529" alt="image" src="https://github.com/user-attachments/assets/b996bcff-04b2-4cec-92fd-f5b5eafa4523">
+
+Ở bước 1, Tiếp tục chọn Github -> Tích vào ô `I have an existing appsmith app connected to Git*` -> Chọn `Configure Git` (theo thứ tự 1, 2, 3) 
+
+<img width="481" alt="image" src="https://github.com/user-attachments/assets/8dd6b38e-bf62-4547-b09a-426107f2b50d">
+
+Ở bước 2, Generate SSH Key hãy quay lại Repository của bạn rồi thực hiện theo các bước: Chọn biểu tượng `<> Code` -> Chọn `SSH` -> Copy `Remote SSH URL` (theo thứ tự 1, 2, 3). Sau đó, dán vào ô `Remote SSH URL` rồi chọn `Generate SSH Key`
+
+<img width="944" alt="image" src="https://github.com/user-attachments/assets/e568f452-3464-49db-a9d4-8002fb75672f">
+
+<img width="481" alt="image" src="https://github.com/user-attachments/assets/cd1ead85-af51-4443-97e8-0834aac7d81f">
+
+Ở bước 3, bạn copy SSH Key và paste vào Repository của bạn.
+
+<img width="478" alt="image" src="https://github.com/user-attachments/assets/1ca0e6d8-8a3f-4653-8c70-24a3eb4009fc">
+
+Trong repository của bạn, chọn `Settings`. Trong tab `Settings` bạn chọn `Deploy keys` rồi chọn `Add Deploy Key` (thứ tự 1, 2)
+
+<img width="936" alt="image" src="https://github.com/user-attachments/assets/dbd053a5-026e-453e-bf74-76c208003b3e">
+
+Trong `Add Deploy Keys` bạn đặt tên cho key tùy ý, ví dụ như đặt `olp-key` chẳng hạn. Rồi bạn paste Key ở Appsmith bạn đã copy vào ô Key rồi tích vào ô `Allow write access`.
+Cuối cùng chọn `Add Key` rồi nhập mật khẩu của Repository để key được thêm.
+
+<img width="947" alt="image" src="https://github.com/user-attachments/assets/e5da9f57-4196-4f08-8ed8-5ad70e308534">
+
+Key được thêm thành công
+
+<img width="590" alt="image" src="https://github.com/user-attachments/assets/c85cf514-7986-42d3-86b4-90eb66648e4f">
+
+Quay lại ứng dụng Appsmith, tích vào ô `I've added the deploy key and gave it write acsess*` rồi chọn Import để bắt đầu thêm dự áo vào Appsmith (thứ tự 1, 2)
+
+<img width="481" alt="image" src="https://github.com/user-attachments/assets/6d4f9a7b-c880-425d-bed0-6aa4362027e4">
+
+Khi đã `Import dự án thành công, dự án sẽ chuyển tới màn hình để bạn điền URL của APIs. 
+
+Đối với restAPI, các bạn nhập link domain APIs bạn đang chạy hoặc địa chỉ máy chủ chạy API (nếu bạn không có domain). Nhập thêm Header `Authorization` và `Bearer {{appsmith.store.access_token}}`
+
+Đối với APInoAuthorization thì chỉ cần nhập link truy vấn của API là được.
+
+<img width="863" alt="image" src="https://github.com/user-attachments/assets/ead70490-e504-452e-baca-fe0808b8aa21">
+
+Xong bạn chỉ cần bấm `Save` là ứng dụng có thể sẵn sàng sử dụng
+
+<img width="960" alt="image" src="https://github.com/user-attachments/assets/95f9c74f-5173-4c9c-8251-5e7a822a9b5a">
+
+**Để có thể tránh lỗi không mong muốn, bạn cần thực hiện dựng APIs theo hướng dẫn cho chính xác**
 
 ### 6. Đóng góp
 

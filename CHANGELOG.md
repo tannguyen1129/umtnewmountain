@@ -2,6 +2,26 @@
 
 Tất cả các thay đổi đáng chú ý trong dự án **umtnewmountain** sẽ được ghi nhận tại đây.
 
+## [1.2.0] - 2024-12-08
+### Added
+- Thêm form phân công nhiệm vụ (`Add form phân công`).
+- Thêm tính năng yêu cầu của Agency (`Add Agency Request`).
+- Nhúng bản đồ thủy văn (`Nhúng Bản đồ thủy văn`).
+- Thêm các widget mới và đổi tên các widget trong Appsmith (`Modify name ID all entity in Appsmith`).
+
+### Changed
+- Chỉnh sửa và cập nhật bản đồ (`Add Map, modify Page Map`).
+- Đổi tên ID tất cả các thực thể trong Appsmith (`Modify name ID all entity in Appsmith`).
+
+### Removed
+- Xóa mô hình AI cũ (`Delete AI`).
+
+## [1.1.1] - 2024-12-07
+### Changed
+- Cập nhật README.md:
+  - Hướng dẫn cài đặt và triển khai hệ thống với Django.
+  - Chi tiết hướng dẫn dựng APIs với Django.
+
 ## [1.1.0] - 2024-12-06
 ### Added
 - Thêm tệp `CHANGELOG.md` để ghi nhận lịch sử thay đổi mã nguồn.
