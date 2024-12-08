@@ -84,6 +84,10 @@ Xem trực tiếp hướng dẫn trong repo sau: [Backend Django](https://github
 
 #### 5.3. Hướng dẫn cài đặt 
 
+Trước tiên bạn hãy `fork` reposity của dự án về Gihub của mình
+
+<img width="938" alt="image" src="https://github.com/user-attachments/assets/9423a12e-ac90-488c-a87c-449fa5623925">
+
 Truy cập vào Website Appsmith (nếu bạn muốn dùng Appsimth Cloud) hoặc truy cập địa chỉ máy chủ Appsmith bạn đã tự cài đặt. Rồi đăng nhập, bạn sẽ ở Workspace của Appsimth:
 
 <img width="958" alt="image" src="https://github.com/user-attachments/assets/7fe9e38d-46b5-4580-9b78-445bdeb78d64">
