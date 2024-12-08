@@ -135,8 +135,19 @@ Quay lại ứng dụng Appsmith, tích vào ô `I've added the deploy key and g
 
 <img width="481" alt="image" src="https://github.com/user-attachments/assets/6d4f9a7b-c880-425d-bed0-6aa4362027e4">
 
+Khi đã `Import dự án thành công, dự án sẽ chuyển tới màn hình để bạn điền URL của APIs. 
 
+Đối với restAPI, các bạn nhập link domain APIs bạn đang chạy hoặc địa chỉ máy chủ chạy API (nếu bạn không có domain). Nhập thêm Header `Authorization` và `Bearer {{appsmith.store.access_token}}`
 
+Đối với APInoAuthorization thì chỉ cần nhập link truy vấn của API là được.
+
+<img width="863" alt="image" src="https://github.com/user-attachments/assets/ead70490-e504-452e-baca-fe0808b8aa21">
+
+Xong bạn chỉ cần bấm `Save` là ứng dụng có thể sẵn sàng sử dụng
+
+<img width="960" alt="image" src="https://github.com/user-attachments/assets/95f9c74f-5173-4c9c-8251-5e7a822a9b5a">
+
+**Để có thể tránh lỗi không mong muốn, bạn cần thực hiện dựng APIs theo hướng dẫn cho chính xác**
 
 ### 6. Đóng góp
 
