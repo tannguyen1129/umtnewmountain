@@ -104,9 +104,37 @@ Tới đây bạn chọn `Import from Git repository (Beta)`:
 
 <img width="529" alt="image" src="https://github.com/user-attachments/assets/b996bcff-04b2-4cec-92fd-f5b5eafa4523">
 
-Tiếp tục chọn Github -> Tích vào ô `I have an existing appsmith app connected to Git*` -> Chọn `Configure Git` (theo thứ tự 1, 2, 3) 
+Ở bước 1, Tiếp tục chọn Github -> Tích vào ô `I have an existing appsmith app connected to Git*` -> Chọn `Configure Git` (theo thứ tự 1, 2, 3) 
 
 <img width="481" alt="image" src="https://github.com/user-attachments/assets/8dd6b38e-bf62-4547-b09a-426107f2b50d">
+
+Ở bước 2, Generate SSH Key hãy quay lại Repository của bạn rồi thực hiện theo các bước: Chọn biểu tượng `<> Code` -> Chọn `SSH` -> Copy `Remote SSH URL` (theo thứ tự 1, 2, 3). Sau đó, dán vào ô `Remote SSH URL` rồi chọn `Generate SSH Key`
+
+<img width="944" alt="image" src="https://github.com/user-attachments/assets/e568f452-3464-49db-a9d4-8002fb75672f">
+
+<img width="481" alt="image" src="https://github.com/user-attachments/assets/cd1ead85-af51-4443-97e8-0834aac7d81f">
+
+Ở bước 3, bạn copy SSH Key và paste vào Repository của bạn.
+
+<img width="478" alt="image" src="https://github.com/user-attachments/assets/1ca0e6d8-8a3f-4653-8c70-24a3eb4009fc">
+
+Trong repository của bạn, chọn `Settings`. Trong tab `Settings` bạn chọn `Deploy keys` rồi chọn `Add Deploy Key` (thứ tự 1, 2)
+
+<img width="936" alt="image" src="https://github.com/user-attachments/assets/dbd053a5-026e-453e-bf74-76c208003b3e">
+
+Trong `Add Deploy Keys` bạn đặt tên cho key tùy ý, ví dụ như đặt `olp-key` chẳng hạn. Rồi bạn paste Key ở Appsmith bạn đã copy vào ô Key rồi tích vào ô `Allow write access`.
+Cuối cùng chọn `Add Key` rồi nhập mật khẩu của Repository để key được thêm.
+
+<img width="947" alt="image" src="https://github.com/user-attachments/assets/e5da9f57-4196-4f08-8ed8-5ad70e308534">
+
+Key được thêm thành công
+
+<img width="590" alt="image" src="https://github.com/user-attachments/assets/c85cf514-7986-42d3-86b4-90eb66648e4f">
+
+Quay lại ứng dụng Appsmith, tích vào ô `I've added the deploy key and gave it write acsess*` rồi chọn Import để bắt đầu thêm dự áo vào Appsmith (thứ tự 1, 2)
+
+<img width="481" alt="image" src="https://github.com/user-attachments/assets/6d4f9a7b-c880-425d-bed0-6aa4362027e4">
+
 
 
 
