@@ -3,6 +3,9 @@
 <a href="https://github.com/tannguyen1129/umtnewmountain/issues/new?assignees=&labels=bug&projects=&template=bug_report.md&title=%5BBug%5D%3A+%3CM%C3%B4+t%E1%BA%A3+ng%E1%BA%AFn+g%E1%BB%8Dn+v%E1%BB%81+l%E1%BB%97i%3E">Báo cáo lỗi (Bug Report)🆘🆘
 </a>
 
+<a href="https://github.com/tannguyen1129/umtnewmountain/issues/new?assignees=&labels=enhancement&projects=&template=feature.md&title=Y%C3%AAu+c%E1%BA%A7u+t%C3%ADnh+n%C4%83ng%3A+%5BT%C3%AAn+t%C3%ADnh+n%C4%83ng%5D">🧑‍🏫🧑‍🏫Feature Request (Yêu cầu thêm tính năng)
+</a>
+
 Ứng dụng hỗ trợ điều phối, thông báo, cập nhật thông tin ứng phó thiên tai, tham họa. Ở dự án này nhóm tác giả chọn Appsimth để dựng Frontend và Django để dựng APIs Backend
 
 Phát triển hệ thống ứng dụng công nghệ thông tin trong ứng phó và hỗ trợ khắc phục trong các tình huống khẩn cấp.
@@ -10,6 +13,8 @@ Phát triển hệ thống ứng dụng công nghệ thông tin trong ứng phó
 Dự án được thực hiện nhằm mục đích tham gia bảng [Phần mềm Nguồn Mở](https://www.olp.vn/procon-pmmn/ph%E1%BA%A7n-m%E1%BB%81m-ngu%E1%BB%93n-m%E1%BB%9F) trong khuôn khổ [Kỳ thi Olympic Tin học sinh viên Việt Nam lần thứ 33](https://www.olp.vn/olympic-tin-h%E1%BB%8Dc-sinh-vi%C3%AAn) tổ chức tại [Trường Đại học Công nghiệp Hà Nội](https://www.haui.edu.vn/vn) từ ngày 10/12/2024 đến ngày 13/12/2024.
 
 Phần mềm được đội ngũ tác giả của UMT.NewMountain open source theo giấy phép [The MIT License](https://opensource.org/license/mit)
+
+**Live Demo:**
 
 ## Mục lục tài liệu
 
@@ -191,7 +196,19 @@ Xong bạn chỉ cần bấm `Save` là ứng dụng có thể sẵn sàng sử 
 
 ### 6. Đóng góp
 
+<a href="https://github.com/tannguyen1129/umtnewmountain/issues/new?assignees=&labels=bug&projects=&template=bug_report.md&title=%5BBug%5D%3A+%3CM%C3%B4+t%E1%BA%A3+ng%E1%BA%AFn+g%E1%BB%8Dn+v%E1%BB%81+l%E1%BB%97i%3E">Báo cáo lỗi (Bug Report)🆘🆘
+</a>
+
+<a href="https://github.com/tannguyen1129/umtnewmountain/issues/new?assignees=&labels=enhancement&projects=&template=feature.md&title=Y%C3%AAu+c%E1%BA%A7u+t%C3%ADnh+n%C4%83ng%3A+%5BT%C3%AAn+t%C3%ADnh+n%C4%83ng%5D">🧑‍🏫🧑‍🏫Feature Request (Yêu cầu thêm tính năng)
+</a>
+
+Bạn hãy đọc [CONTRIBUTING.md](.github/CONTRIBUTING.md) để biết thêm chi tiết. Mọi đóng góp rất là quan trọng cho sự phát triển của ứng dụng.
+
 ### 7. Liên lạc
+
+**Sơn Tân**: 
+- Email cá nhân: tandtnt15@gmail.com
+- Email sinh viên: tan.2201700053@st.umt.edu.vn
 
 ### 8. License
 
