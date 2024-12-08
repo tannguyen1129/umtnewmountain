@@ -1,5 +1,5 @@
 ---
-name: Feature Request
+name: 🧑‍🏫🧑‍🏫Feature Request
 about: Đề xuất tính năng mới cho Rescue System
 title: 'Yêu cầu tính năng: [Tên tính năng]'
 labels: enhancement
