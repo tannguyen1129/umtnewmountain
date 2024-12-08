@@ -1,4 +1,4 @@
-# RESCUE SYSTEM - UMT.NEWMOUNTAIN [![DEMO](https://img.shields.io/badge/DEMO-28a745?style=for-the-badge&logo=github&logoColor=white)](https://rescueumt.umtoj.edu.vn)
+# RESCUE SYSTEM - UMT.NEWMOUNTAIN [![DEMO](https://img.shields.io/badge/DEMO-28a745?style=for-the-badge&logo=github&logoColor=white)](https://olp.umtoj.edu.vn/app/rescue-app/citizenpage-673f7d3ae443011fab9eaaab?branch=main)
 
 <a href="https://github.com/tannguyen1129/umtnewmountain/issues/new?assignees=&labels=bug&projects=&template=bug_report.md&title=%5BBug%5D%3A+%3CM%C3%B4+t%E1%BA%A3+ng%E1%BA%AFn+g%E1%BB%8Dn+v%E1%BB%81+l%E1%BB%97i%3E">Báo cáo lỗi (Bug Report)🆘🆘
 </a>
@@ -14,7 +14,7 @@ Dự án được thực hiện nhằm mục đích tham gia bảng [Phần mề
 
 Phần mềm được đội ngũ tác giả của UMT.NewMountain open source theo giấy phép [The MIT License](https://opensource.org/license/mit)
 
-**Live Demo:** rescueumt.umtoj.edu.vn
+**Live Demo:** [DEMO](rescueumt.umtoj.edu.vn)
 
 ## Mục lục tài liệu
 
