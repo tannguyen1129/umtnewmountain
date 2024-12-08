@@ -55,7 +55,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 62,
   "serverSideFiltering": false,
-  "sourceData": "{{personelAPI.data.map(resource => ({\n  label: resource.personnel_name,  // Đây sẽ là giá trị hiển thị\n  value: resource.personnel_name   // Đây sẽ là giá trị chọn khi người dùng chọn\n}))}}",
+  "sourceData": "{{personelAPI.data.map(resource => ({\n  label: resource.personnel_name,  // Đây sẽ là giá trị hiển thị\n  value: resource.id  // Đây sẽ là giá trị chọn khi người dùng chọn\n}))}}",
   "topRow": 34,
   "type": "SELECT_WIDGET",
   "version": 1,
