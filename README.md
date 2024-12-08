@@ -13,8 +13,8 @@ Phần mềm được đội ngũ tác giả của UMT.NewMountain open source t
 
 ## Mục lục tài liệu
 
-1. [Giới Thiệu](#1-Giới-thiệu)
-2. [Tổng quan hệ thống](#2-Tổng-quan-hệ-thống)
+1. [Giới Thiệu](#1-giới-thiệu)
+2. [Tổng quan hệ thống](#2-tổng-quan-hệ-thống)
 3. [Chức năng](#3-Chức-năng)
 4. [Cấu trúc thư mục dự án](#4-Cấu-trúc-thư-mục-dự-án)
 5. [Hướng dẫn cài đặt](#hướng-dẫn-cài-đặt)
@@ -32,11 +32,44 @@ Phần mềm được đội ngũ tác giả của UMT.NewMountain open source t
 
 ### 2. Tổng quan hệ thống
 
+[Django](https://www.djangoproject.com/): Dựng APIs cho hệ thống.
+
+[Django REST Framework (DRF)](https://www.django-rest-framework.org/): phát triển các API RESTful nhanh chóng và dễ dàng. DRF cung cấp các công cụ mạnh mẽ để xây dựng các API, cho phép dễ dàng chuyển đổi dữ liệu thành các định dạng như JSON, XML và hỗ trợ các phương thức HTTP như GET, POST, PUT, DELETE.
+
+[Appsmith](https://www.appsmith.com/): Xây dựng giao diện người dùng.
+
+[SQLite](https://docs.djangoproject.com/en/5.1/ref/databases/): SQLite là một hệ quản trị cơ sở dữ liệu quan hệ (RDBMS) nhẹ và đơn giản, được tích hợp sẵn trong Django.
+
 ![Frontend](https://github.com/user-attachments/assets/4ff23cfb-938c-4dbb-a95c-6d44edfdf227)
 
 ### 3. Chức năng
 
-### 4. Cấu trúc thư mục dự án
+Dự án có các chứng năng như sau:
+
+Đối với phân quyền Người dân:
+- Không cần đăng nhập;
+- Xem dự báo thiên tai;
+- Thông báo đến từ cơ quan chức năng;
+- Đăng ký nhận tin tức;
+- Xem bản đồ đánh dấu vùng thiên tai;
+- Gửi yêu cầu giúp đỡ đến cơ quan chức năng, cứu hộ.
+
+
+Đối với phân quyền cơ quan chức năng, cứu hộ
+- Đăng nhập để thực hiện được thao tác;
+- Gửi thông báo đến người dân;
+- Gửi yêu cầu điều phối vật tư, vật lực, nhân lực;
+- Nhận yêu cầu hỗ trợ từ người dân;
+- Điều phối các vật tư, vật lực, nhân lực;
+- Đánh dấu vùng nguy hiểm trên bản đồ;
+- Nhận đăng ký tin tức từ người dân để gửi thông tin, thông báo qua email hoặc số điện thoại.
+
+Đối với phân quyền của cơ quan quản lý vật tư, vật lực:
+- Xem yêu cầu điều phối;
+- Thêm vật tư, vật lực cần điều phối;
+- Phê duyệt các yêu cầu điều phối vật tư.
+
+### 4. Screens Flow của dự án
 
 ### 5. Hướng dẫn cài đặt
 
