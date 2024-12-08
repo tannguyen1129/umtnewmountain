@@ -29,7 +29,7 @@
   "mobileRightColumn": 53,
   "mobileTopRow": 17,
   "needsErrorInfo": false,
-  "onClick": "",
+  "onClick": "{{logout.handleLogout();}}",
   "originalBottomRow": 21,
   "originalTopRow": 17,
   "parentColumnSpace": 17.9375,
