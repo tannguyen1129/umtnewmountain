@@ -2,6 +2,21 @@
 
 Tất cả các thay đổi đáng chú ý trong dự án **umtnewmountain** sẽ được ghi nhận tại đây.
 
+## [1.2.1] - 2024-12-09
+### Added
+- Thêm chức năng logout (`Add function logout`).
+- Tạo tệp `feature.md` để mô tả tính năng của dự án.
+- Cập nhật README.md:
+  - Thêm liên lạc và giấy phép.
+  - Bổ sung giới thiệu và chức năng.
+
+### Changed
+- Chỉnh sửa vai trò trong Agency Role (`Modify Agency Role`).
+- Cập nhật và bổ sung tài liệu trong `README.md` liên quan đến frontend và cài đặt hệ thống.
+
+### Fixed
+- Sửa đổi và cập nhật giao diện Citizen (`Commit Citizen modify`).
+
 ## [1.2.0] - 2024-12-08
 ### Added
 - Thêm form phân công nhiệm vụ (`Add form phân công`).
