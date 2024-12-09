@@ -127,7 +127,7 @@ Lệnh này sẽ tải xuống hình ảnh Docker cần thiết nếu nó không
 
 #### 5.2. Dựng APIs bằng Django
 
-Xem trực tiếp hướng dẫn trong repo sau: [Backend Django](https://github.com/tannguyen1129/backend)
+Xem trực tiếp hướng dẫn trong tài liệu sau: [Backend Django](https://tannguyen1129.github.io/backend/)
 
 #### 5.3. Hướng dẫn cài đặt 
 
