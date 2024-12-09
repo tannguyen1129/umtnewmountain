@@ -9,13 +9,19 @@ Tất cả các thay đổi đáng chú ý trong dự án **umtnewmountain** s�
 - Cập nhật README.md:
   - Thêm liên lạc và giấy phép.
   - Bổ sung giới thiệu và chức năng.
+- Bổ sung **Screen Flow** vào README.md (`Add Screen Flow to README.md`).
 
 ### Changed
 - Chỉnh sửa vai trò trong Agency Role (`Modify Agency Role`).
 - Cập nhật và bổ sung tài liệu trong `README.md` liên quan đến frontend và cài đặt hệ thống.
+- Chỉnh sửa một số mục trong **Resource** (`Modify Resource`).
+- Sửa lỗi chính tả (`Fix typos`).
+- Cập nhật bản đồ với thay đổi `negative to Map` (`Modify Map negative`).
 
 ### Fixed
 - Sửa đổi và cập nhật giao diện Citizen (`Commit Citizen modify`).
+- Cải thiện README.md (`Update README.md`).
+- Sửa lỗi chính tả và cài đặt trong tài liệu hướng dẫn (`Fix typos in setup`).
 
 ## [1.2.0] - 2024-12-08
 ### Added
