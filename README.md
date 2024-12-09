@@ -77,6 +77,8 @@ Dự án có các chứng năng như sau:
 
 ### 4. Screens Flow của dự án
 
+![ScreenFlow](https://github.com/user-attachments/assets/57b573ab-67a9-4e79-9bf4-65087c748480)
+
 ### 5. Hướng dẫn cài đặt
 
 #### 5.1. Yêu cầu
