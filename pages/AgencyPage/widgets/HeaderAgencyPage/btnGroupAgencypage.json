@@ -24,6 +24,9 @@
     },
     {
       "key": "groupButtons.groupButton1kty9k4m8h.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton3.onClick"
     }
   ],
   "groupButtons": {
@@ -80,6 +83,7 @@
           "widgetId": ""
         }
       },
+      "onClick": "{{navigateTo('AgencyMap', {}, 'SAME_WINDOW');}}",
       "placement": "CENTER",
       "widgetId": ""
     },
