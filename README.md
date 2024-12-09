@@ -214,7 +214,7 @@ Cuối các bạn vào `CitizenMap` và AgencyMap`:
 
 Chọn vào tấm bản đồ, bấm `Edit sources`:
 
-<img width="764" alt="image" src="https://github.com/user-attachments/assets/14d1c50e-0c6e-46c7-8460-70a887f72650">
+<img width="764" alt="image" src="https://github.com/user-attachments/assets/ec27cf9d-e9d4-4bde-a83b-7f253d7fe821">
 
 Sau đó thay thế APIs và Proxy của bạn, ở đây tôi đang proxy demo:
 
