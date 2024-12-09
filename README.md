@@ -46,6 +46,8 @@ Phần mềm được đội ngũ tác giả của UMT.NewMountain open source t
 
 [SQLite](https://docs.djangoproject.com/en/5.1/ref/databases/): SQLite là một hệ quản trị cơ sở dữ liệu quan hệ (RDBMS) nhẹ và đơn giản, được tích hợp sẵn trong Django.
 
+[OpenStreetMap](https://www.openstreetmap.org/#map=8/11.114/107.128): Đây là bản đồ open source. Tuy nhiên còn gây tranh cãi ở phần lãnh hải của Việt Nam. Tôi vẫn khẳng định Hoàng Sa - Trường Sa là của Việt Nam.-
+
 ![Frontend](https://github.com/user-attachments/assets/4ff23cfb-938c-4dbb-a95c-6d44edfdf227)
 
 ### 3. Chức năng
