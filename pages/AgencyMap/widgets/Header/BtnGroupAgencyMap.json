@@ -21,6 +21,9 @@
     },
     {
       "key": "groupButtons.groupButtonh2d3yd3t90.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton6bsvrq7t55.onClick"
     }
   ],
   "groupButtons": {
@@ -47,7 +50,7 @@
       "isSeparator": false,
       "isVisible": true,
       "itemType": "BUTTON",
-      "label": "Yêu cầu hõ trợ",
+      "label": "Yêu cầu hỗ trợ",
       "menuItems": {},
       "placement": "CENTER",
       "variant": "filled",
@@ -91,6 +94,7 @@
       "itemType": "BUTTON",
       "label": "Tài nguyên",
       "menuItems": {},
+      "onClick": "{{navigateTo('AgencyResourcePage', {}, 'SAME_WINDOW');}}",
       "placement": "CENTER",
       "variant": "filled",
       "widgetId": "s9r0zp78tc"

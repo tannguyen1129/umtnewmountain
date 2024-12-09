@@ -53,7 +53,7 @@
       "isSeparator": false,
       "isVisible": true,
       "itemType": "BUTTON",
-      "label": "Yêu cầu giúp đỡ",
+      "label": "Yêu cầu hỗ trợ",
       "menuItems": {},
       "onClick": "{{navigateTo('AgencyRequests', {}, 'SAME_WINDOW');}}",
       "placement": "CENTER",
