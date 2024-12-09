@@ -208,6 +208,20 @@ Xong bạn chỉ cần bấm `Save` là ứng dụng có thể sẵn sàng sử 
 
 Bạn hãy đọc [CONTRIBUTING.md](.github/CONTRIBUTING.md) để biết thêm chi tiết. Mọi đóng góp rất là quan trọng cho sự phát triển của ứng dụng.
 
+Cuối các bạn vào `CitizenMap` và AgencyMap`:
+
+<img width="151" alt="image" src="https://github.com/user-attachments/assets/44721176-6607-4050-a819-04365e76639d">
+
+Chọn vào tấm bản đồ, bấm `Edit sources`:
+
+<img width="764" alt="image" src="https://github.com/user-attachments/assets/14d1c50e-0c6e-46c7-8460-70a887f72650">
+
+Sau đó thay thế APIs và Proxy của bạn, ở đây tôi đang proxy demo:
+
+<img width="385" alt="image" src="https://github.com/user-attachments/assets/66d93500-02c3-48fa-a9c3-0b27492dc86d">
+
+Đến đây là hoàn thành.
+
 ### 7. Liên lạc
 
 **Sơn Tân**: 
