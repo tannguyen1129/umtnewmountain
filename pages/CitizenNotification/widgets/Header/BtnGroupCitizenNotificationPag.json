@@ -50,7 +50,7 @@
       "isSeparator": false,
       "isVisible": true,
       "itemType": "BUTTON",
-      "label": "Yêu cầu giúp đỡ",
+      "label": "Yêu cầu hỗ trợ",
       "menuItems": {},
       "onClick": "{{navigateTo('CitizenRequest', {}, 'SAME_WINDOW');}}",
       "placement": "CENTER",
