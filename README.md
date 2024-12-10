@@ -48,7 +48,7 @@ Phần mềm được đội ngũ tác giả của UMT.NewMountain open source t
 
 [OpenStreetMap](https://www.openstreetmap.org/#map=8/11.114/107.128): Đây là bản đồ open source. Tuy nhiên còn gây tranh cãi ở phần lãnh hải của Việt Nam. Tôi vẫn khẳng định Hoàng Sa - Trường Sa là của Việt Nam.-
 
-![Frontend](https://github.com/user-attachments/assets/4ff23cfb-938c-4dbb-a95c-6d44edfdf227)
+![Kien-truc-he-thong](https://github.com/user-attachments/assets/095d35d9-da9c-4740-9d88-8095d6ae30e9)
 
 ### 3. Chức năng
 
