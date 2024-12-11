@@ -97,7 +97,7 @@
       "isSeparator": false,
       "isVisible": true,
       "itemType": "BUTTON",
-      "label": "Thông báo",
+      "label": "Thông báo và tin tức",
       "menuItems": {},
       "onClick": "{{navigateTo('CitizenNotification', {}, 'SAME_WINDOW');}}",
       "placement": "CENTER",

@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 52,
+  "bottomRow": 67,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "canFreezeColumn": true,
   "childStylesheet": {
@@ -33,16 +33,16 @@
   "columnOrder": [
     "id",
     "title",
-    "content",
-    "timestamp",
-    "customColumn1"
+    "link",
+    "image_url",
+    "time_posted"
   ],
-  "columnUpdatedAt": 1733278115536,
+  "columnUpdatedAt": 1733947145939,
   "columnWidthMap": {
-    "content": 587,
     "id": 60,
-    "timestamp": 213,
-    "title": 281
+    "image_url": 185,
+    "link": 698,
+    "time_posted": 206
   },
   "customIsLoading": false,
   "customIsLoadingValue": "",
@@ -63,43 +63,30 @@
       "key": "boxShadow"
     },
     {
+      "key": "tableData"
+    },
+    {
       "key": "primaryColumns.id.computedValue"
     },
     {
       "key": "primaryColumns.title.computedValue"
     },
     {
-      "key": "primaryColumns.content.computedValue"
+      "key": "primaryColumns.link.computedValue"
     },
     {
-      "key": "primaryColumns.timestamp.computedValue"
+      "key": "primaryColumns.image_url.computedValue"
     },
     {
-      "key": "primaryColumns.customColumn1.buttonColor"
-    },
-    {
-      "key": "primaryColumns.customColumn1.borderRadius"
-    },
-    {
-      "key": "primaryColumns.customColumn1.boxShadow"
-    },
-    {
-      "key": "tableData"
+      "key": "primaryColumns.time_posted.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
     {
       "key": "tableData"
-    },
-    {
-      "key": "primaryColumns.customColumn1.onClick"
     }
   ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "primaryColumns.customColumn1.onClick"
-    }
-  ],
+  "dynamicTriggerPathList": [],
   "enableClientSideSearch": true,
   "flexVerticalAlignment": "start",
   "horizontalAlignment": "LEFT",
@@ -111,97 +98,25 @@
   "isVisibleFilters": false,
   "isVisiblePagination": true,
   "isVisibleSearch": true,
-  "key": "zge5cnn4o5",
+  "key": "d6zmigk8kt",
   "label": "Data",
   "leftColumn": 0,
   "minWidth": 450,
-  "mobileBottomRow": 42,
-  "mobileLeftColumn": 0,
-  "mobileRightColumn": 34,
-  "mobileTopRow": 14,
+  "mobileBottomRow": 32,
+  "mobileLeftColumn": 14,
+  "mobileRightColumn": 48,
+  "mobileTopRow": 4,
   "needsErrorInfo": false,
-  "originalBottomRow": 52,
-  "originalTopRow": 11,
-  "parentColumnSpace": 19.8125,
-  "parentId": "0",
+  "parentColumnSpace": 17.625,
+  "parentId": "x7ct1zfhiy",
   "parentRowSpace": 10,
   "primaryColumns": {
-    "content": {
-      "alias": "content",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "columnType": "text",
-      "computedValue": "{{Notification_Table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"content\"]))}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "horizontalAlignment": "LEFT",
-      "id": "content",
-      "index": 2,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": true,
-      "label": "content",
-      "notation": "standard",
-      "originalId": "content",
-      "sticky": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
-    "customColumn1": {
-      "alias": "Detail",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "borderRadius": "{{Notification_Table.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
-      "boxShadow": "{{Notification_Table.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
-      "buttonColor": "{{Notification_Table.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
-      "buttonLabel": "Xem chi tiết",
-      "buttonStyle": "rgb(3, 179, 101)",
-      "columnType": "button",
-      "computedValue": "",
-      "currencyCode": "USD",
-      "customAlias": "",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "horizontalAlignment": "LEFT",
-      "id": "customColumn1",
-      "index": 4,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": true,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": true,
-      "label": "Detail",
-      "labelColor": "#FFFFFF",
-      "notation": "standard",
-      "onClick": "{{showModal('detail_noti_citizen');\nstoreValue('selectedRow', currentRow);\n}}\n",
-      "originalId": "customColumn1",
-      "sticky": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
     "id": {
       "alias": "id",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "columnType": "number",
-      "computedValue": "{{Notification_Table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id\"]))}}",
+      "computedValue": "{{climate_news.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -227,18 +142,18 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "timestamp": {
-      "alias": "timestamp",
+    "image_url": {
+      "alias": "image_url",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "columnType": "text",
-      "computedValue": "{{Notification_Table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"timestamp\"]))}}",
+      "columnType": "image",
+      "computedValue": "{{climate_news.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"image_url\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
       "horizontalAlignment": "LEFT",
-      "id": "timestamp",
+      "id": "image_url",
       "index": 3,
       "isCellEditable": false,
       "isCellVisible": true,
@@ -248,9 +163,71 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "timestamp",
+      "label": "image_url",
       "notation": "standard",
-      "originalId": "timestamp",
+      "originalId": "image_url",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "link": {
+      "alias": "link",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "columnType": "url",
+      "computedValue": "{{climate_news.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"link\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "link",
+      "index": 2,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "link",
+      "notation": "standard",
+      "originalId": "link",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "time_posted": {
+      "alias": "time_posted",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "columnType": "text",
+      "computedValue": "{{climate_news.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"time_posted\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "time_posted",
+      "index": 4,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "time_posted",
+      "notation": "standard",
+      "originalId": "time_posted",
       "sticky": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
@@ -263,7 +240,7 @@
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "columnType": "text",
-      "computedValue": "{{Notification_Table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"title\"]))}}",
+      "computedValue": "{{climate_news.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"title\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -278,7 +255,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "title",
       "notation": "standard",
       "originalId": "title",
@@ -294,13 +271,13 @@
   "responsiveBehavior": "fill",
   "rightColumn": 64,
   "searchKey": "",
-  "tableData": "{{ getNotificationCitizenAPI.data}}",
+  "tableData": "{{fetch_newsAPI.data.articles}}",
   "textSize": "0.875rem",
-  "topRow": 11,
+  "topRow": 1,
   "totalRecordsCount": 0,
   "type": "TABLE_WIDGET_V2",
   "version": 2,
   "verticalAlignment": "CENTER",
-  "widgetId": "2blpe59iii",
-  "widgetName": "Notification_Table"
+  "widgetId": "ar4p8qhb0y",
+  "widgetName": "climate_news"
 }
