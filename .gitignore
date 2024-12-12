@@ -5,3 +5,6 @@
 README.md
 LICENSE
 CHANGELOG.md
+
+.gitmodules
+backend/
